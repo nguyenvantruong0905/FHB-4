@@ -1,0 +1,21 @@
+OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+<ShortName>k-ous</ShortName>
+<Description>Search Từ coder đến developer -K-ous Nguyễn - Lập trình viên giỏi không phải chỉ biết code</Description>
+<Contact>help@wordpress.com</Contact>
+<Url type="application/atom+xml" template="https://k-ous.tk/?s={searchTerms}&feed=atom"/>
+<Url type="rss+xml" template="https://k-ous.tk/?s={searchTerms}&feed=rss2"/>
+<Url type="text/html" template="https://k-ous.tk/?s={searchTerms}" method="GET"/>
+<Url type="application/opensearchdescription+xml" rel="self" template="https://toidicodedao.com/osd.xml"/>
+<LongName>Từ coder đến developer - K-ous Nguyễn</LongName>
+<Image height="16" width="16" type="image/vnd.microsoft.icon">https://i.pinimg.com/originals/26/33/e5/2633e5d5ae5a39d6d4c73adb44bfb227.jpg&d=https%3A%2F%2Fk-ous.tk%2Ffavicon.ico</Image>
+<Image height="64" width="64" type="image/png">https://i.pinimg.com/originals/26/33/e5/2633e5d5ae5a39d6d4c73adb44bfb227.jpg&d=https%3A%2F%2Fs-ssl.wordpress.com%2Fi%2Flogo%2Fgray-white-transparent-64.png</Image>
+<Query role="example" searchTerms="photography"/>
+<Tags>lap-trinh developer kinh-nghiem lap-trinh-vien code programming javascript programmer series c</Tags>
+<Developer>Automattic</Developer>
+<SyndicationRight>open</SyndicationRight>
+<AdultContent>false</AdultContent>
+<Language>en</Language>
+<OutputEncoding>UTF-8</OutputEncoding>
+<InputEncoding>UTF-8</InputEncoding>
+<moz:SearchForm>https://toidicodedao.com</moz:SearchForm>
+</OpenSearchDescription>

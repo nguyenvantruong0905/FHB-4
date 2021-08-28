@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?> 
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
 <ShortName>Vnkings Search</ShortName>
-<Description>Tìm kiếm bằng Vnkings Solutions</Description>
+<Description>Tìm kiếm bằng K-ous Solution</Description>
 <InputEncoding>UTF-8</InputEncoding>
 <LongName>Vnkings Search</LongName>
 <Image height="16" width="16" type="image/x-icon">https://k-ous.tk/imgs/theme.jpg</Image>
-<Url type="text/html" method="get" template="https://wordpress.vnkings.com/?s={searchTerms}"/>
+<Url type="text/html" method="get" template="https://k-ous.tk/?s={searchTerms}"/>
 </OpenSearchDescription>

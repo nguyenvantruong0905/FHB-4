@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>About me | Từ coder đến developer &#8211; K-ous Nguyễn</title>
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://k-ous.tk/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="https://s0.wp.com/wp-content/themes/pub/twentyfourteen/js/html5.js?ver=3.7.0"></script>
+	<![endif]-->
+	<script type="text/javascript">
+  WebFontConfig = {"google":{"families":["Noto+Serif:b:latin,latin-ext","Noto+Sans:r,i,b,bi:latin,latin-ext"]}};
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://s0.wp.com/wp-content/plugins/custom-fonts/js/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+	})();
+</script><style id="jetpack-custom-fonts-css">.wf-active .site-title{font-family:"Noto Serif",serif;font-weight:700;font-style:normal}.wf-active body{font-family:"Noto Sans",sans-serif}.wf-active body, .wf-active input, .wf-active select, .wf-active textarea{font-family:"Noto Sans",sans-serif}.wf-active #page .entry-content div.sharedaddy h3, .wf-active #page .entry-summary div.sharedaddy h3, .wf-active #page .entry-content h3.sd-title, .wf-active #page .entry-summary h3.sd-title, .wf-active #primary div.sharedaddy .jp-relatedposts-headline em, .wf-active .pd-rating{font-family:"Noto Sans",sans-serif}.wf-active h1, .wf-active h2:not(.site-description), .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6{font-family:"Noto Serif",serif;font-weight:700;font-style:normal}.wf-active h1{font-style:normal;font-weight:700}.wf-active h2:not(.site-description){font-style:normal;font-weight:700}.wf-active h3{font-style:normal;font-weight:700}.wf-active h4{font-style:normal;font-weight:700}.wf-active h5{font-style:normal;font-weight:700}.wf-active h6{font-style:normal;font-weight:700}.wf-active th{font-weight:700;font-style:normal}.wf-active .entry-title{font-weight:700;font-style:normal}</style>
+<meta name='robots' content='max-image-preview:large' />
+<meta name="google-site-verification" content="IIcLfe7-qkLMjjIiJ2tGH-s3DwrAHYv5vpEfeUHCjeg" />
+<meta name="msvalidate.01" content="5EEABCD3F6B150C261771407144FFA0C" />
+<meta name="p:domain_verify" content="1a513e9468938bc0edb46508af1f41f7" />
+<meta name="yandex-verification" content="17c7a106c3e83c24" />
+
+<!-- Async WordPress.com Remote Login -->
+<script id="wpcom_remote_login_js">
+var wpcom_remote_login_extra_auth = '';
+function wpcom_remote_login_remove_dom_node_id( element_id ) {
+	var dom_node = document.getElementById( element_id );
+	if ( dom_node ) { dom_node.parentNode.removeChild( dom_node ); }
+}
+function wpcom_remote_login_remove_dom_node_classes( class_name ) {
+	var dom_nodes = document.querySelectorAll( '.' + class_name );
+	for ( var i = 0; i < dom_nodes.length; i++ ) {
+		dom_nodes[ i ].parentNode.removeChild( dom_nodes[ i ] );
+	}
+}
+function wpcom_remote_login_final_cleanup() {
+	wpcom_remote_login_remove_dom_node_classes( "wpcom_remote_login_msg" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_validate" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_js" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_iframe" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_styles" );
+}
+
+// Watch for messages back from the remote login
+window.addEventListener( "message", function( e ) {
+	if ( e.origin === "https://r-login.wordpress.com" ) {
+		var data = {};
+		try {
+			data = JSON.parse( e.data );
+		} catch( e ) {
+			wpcom_remote_login_final_cleanup();
+			return;
+		}
+
+		if ( data.msg === 'LOGIN' ) {
+			// Clean up the login check iframe
+			wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+
+			var id_regex = new RegExp( /^[0-9]+$/ );
+			var token_regex = new RegExp( /^.*|.*|.*$/ );
+			if (
+				token_regex.test( data.token )
+				&& id_regex.test( data.wpcomid )
+			) {
+				// We have everything we need to ask for a login
+				var script = document.createElement( "script" );
+				script.setAttribute( "id", "wpcom_remote_login_validate" );
+				script.src = '/remote-login.php?wpcom_remote_login=validate'
+					+ '&wpcomid=' + data.wpcomid
+					+ '&token=' + encodeURIComponent( data.token )
+					+ '&host=' + window.location.protocol
+					+ '//' + window.location.hostname
+					+ '&postid=1'
+					+ '&is_singular=';
+				document.body.appendChild( script );
+			}
+
+			return;
+		}
+
+		// Safari ITP, not logged in, so redirect
+		if ( data.msg === 'LOGIN-REDIRECT' ) {
+			window.location = 'https://wordpress.com/log-in?redirect_to=' + window.location.href;
+			return;
+		}
+
+		// Safari ITP, storage access failed, remove the request
+		if ( data.msg === 'LOGIN-REMOVE' ) {
+			var css_zap = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } @media screen and ( max-width: 782px ) { html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } }';
+			var style_zap = document.createElement( 'style' );
+			style_zap.type = 'text/css';
+			style_zap.appendChild( document.createTextNode( css_zap ) );
+			document.body.appendChild( style_zap );
+
+			var e = document.getElementById( 'wpcom_request_access_iframe' );
+			e.parentNode.removeChild( e );
+
+			document.cookie = 'wordpress_com_login_access=denied; path=/; max-age=31536000';
+
+			return;
+		}
+
+		// Safari ITP
+		if ( data.msg === 'REQUEST_ACCESS' ) {
+			console.log( 'request access: safari' );
+
+			// Check ITP iframe enable/disable knob
+			if ( wpcom_remote_login_extra_auth !== 'safari_itp_iframe' ) {
+				return;
+			}
+
+			// If we are in a "private window" there is no ITP.
+			var private_window = false;
+			try {
+				var opendb = window.openDatabase( null, null, null, null );
+			} catch( e ) {
+				private_window = true;
+			}
+
+			if ( private_window ) {
+				console.log( 'private window' );
+				return;
+			}
+
+			var iframe = document.createElement( 'iframe' );
+			iframe.id = 'wpcom_request_access_iframe';
+			iframe.setAttribute( 'scrolling', 'no' );
+			iframe.setAttribute( 'sandbox', 'allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-top-navigation-by-user-activation' );
+			iframe.src = 'https://r-login.wordpress.com/remote-login.php?wpcom_remote_login=request_access&origin=' + encodeURIComponent( data.origin ) + '&wpcomid=' + encodeURIComponent( data.wpcomid );
+
+			var css = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 46px !important; } * html body { margin-top: 46px !important; } @media screen and ( max-width: 660px ) { html { margin-top: 71px !important; } * html body { margin-top: 71px !important; } #wpcom_request_access_iframe { display: block; height: 71px !important; } } #wpcom_request_access_iframe { border: 0px; height: 46px; position: fixed; top: 0; left: 0; width: 100%; min-width: 100%; z-index: 99999; background: #23282d; } ';
+
+			var style = document.createElement( 'style' );
+			style.type = 'text/css';
+			style.id = 'wpcom_request_access_styles';
+			style.appendChild( document.createTextNode( css ) );
+			document.body.appendChild( style );
+
+			document.body.appendChild( iframe );
+		}
+
+		if ( data.msg === 'DONE' ) {
+			wpcom_remote_login_final_cleanup();
+		}
+	}
+}, false );
+
+// Inject the remote login iframe after the page has had a chance to load
+// more critical resources
+window.addEventListener( "DOMContentLoaded", function( e ) {
+	var iframe = document.createElement( "iframe" );
+	iframe.style.display = "none";
+	iframe.setAttribute( "scrolling", "no" );
+	iframe.setAttribute( "id", "wpcom_remote_login_key" );
+	iframe.src = "https://r-login.wordpress.com/remote-login.php"
+		+ "?wpcom_remote_login=key"
+		+ "&origin=aHR0cHM6Ly90b2lkaWNvZGVkYW8uY29t"
+		+ "&wpcomid=81976675"
+		+ "&time=1629647989";
+	document.body.appendChild( iframe );
+}, false );
+</script>
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//toidicodedao.wordpress.com' />
+<link rel='dns-prefetch' href='//wordpress.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.pubmine.com' />
+<link rel='dns-prefetch' href='//x.bidswitch.net' />
+<link rel='dns-prefetch' href='//static.criteo.net' />
+<link rel='dns-prefetch' href='//ib.adnxs.com' />
+<link rel='dns-prefetch' href='//aax.amazon-adsystem.com' />
+<link rel='dns-prefetch' href='//bidder.criteo.com' />
+<link rel='dns-prefetch' href='//cas.criteo.com' />
+<link rel='dns-prefetch' href='//gum.criteo.com' />
+<link rel='dns-prefetch' href='//ads.pubmatic.com' />
+<link rel='dns-prefetch' href='//gads.pubmatic.com' />
+<link rel='dns-prefetch' href='//tpc.googlesyndication.com' />
+<link rel='dns-prefetch' href='//ad.doubleclick.net' />
+<link rel='dns-prefetch' href='//googleads.g.doubleclick.net' />
+<link rel='dns-prefetch' href='//www.googletagservices.com' />
+<link rel='dns-prefetch' href='//cdn.switchadhub.com' />
+<link rel='dns-prefetch' href='//delivery.g.switchadhub.com' />
+<link rel='dns-prefetch' href='//delivery.swid.switchadhub.com' />
+<link rel='dns-prefetch' href='//a.teads.tv' />
+<link rel='dns-prefetch' href='//prebid.media.net' />
+<link rel='dns-prefetch' href='//adserver-us.adtech.advertising.com' />
+<link rel='dns-prefetch' href='//fastlane.rubiconproject.com' />
+<link rel='dns-prefetch' href='//prebid-server.rubiconproject.com' />
+<link rel='dns-prefetch' href='//hb-api.omnitagjs.com' />
+<link rel='dns-prefetch' href='//mtrx.go.sonobi.com' />
+<link rel='dns-prefetch' href='//apex.go.sonobi.com' />
+<link rel='dns-prefetch' href='//u.openx.net' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Từ coder đến developer - K-ous Nguyễn &raquo; Feed" href="https://k-ous.tk/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Từ coder đến developer - K-ous Nguyễn &raquo; Comments Feed" href="https://k-ous.tk/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Từ coder đến developer - K-ous Nguyễn &raquo; About me Comments Feed" href="https://k-ous.tk/about/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script>
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s0.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1625065786h&ver=5.8"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style>
+            body,a {
+cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur862.ani), url(http://cur.cursors-4u.net/cursors/cur-9/cur862.png), progress !important;
+    }
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='all-css-0-1' href='https://s0.wp.com/_static/??-eJytkt1SwyAQhV9Igmm0M144Pgs/K27L37DQyNtL0qlNm2nthTcZDme/zQGWj5Gp4DP4zF1h0RaDnvgYVXCMHFqoV6pTRE98gUkbzBkMSQtN3NgghX2sNo/Nqp+hpAzg2WGzwhbJLO6B+A5yFGrPZrUqP9Wa0qSEZJqTgB/6vhu6Zy4LWj1FmRvIJFLllKuF/2iUv8CdG6FXtugpMHEHGgXYZk8nWohoRYXELBihaufQ/403b6kvoNvh56SLyxM1lMxMQv3w+a9aJJHRG7qBL55ture276JYh7+DjagN5IbTac0yfN9H5mGVMiYgYu3rsDg2P8t6Ui4SuinNcaTmH17sHFHkPmRsNP0uJuPDvffbzdvQD9uX190PIYNAsQ==?cssminify=yes' type='text/css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify {
+	text-align:justify;
+}
+</style>
+<link crossorigin="anonymous" rel='stylesheet' id='twentyfourteen-lato-css'  href='https://fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C900%2C300italic%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext&#038;display=fallback' media='all' />
+<link rel='stylesheet' id='all-css-2-1' href='https://s0.wp.com/_static/??-eJyVjUsOgCAMRC+kVomflfEukvqFQmwJ4fYSV25cuJu8eZOB6EvtSJAEbCi9CetODCsSXnsuPmKlmQt4bWVDiww+zCAxg7S4cAkiAUsy+MPPJszG6fM5mezY9ErVXTvU6rgB+xRBew==?cssminify=yes' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfourteen-ie-css'  href='https://s0.wp.com/wp-content/themes/pub/twentyfourteen/css/ie.css?m=1405358337h&#038;ver=20140701' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='all-css-4-1' href='https://s0.wp.com/_static/??-eJyVkEsOwjAMRC+EMQgB6gJxljS4IeDEUeMo9PYEhARs+OzmefRmYawJrESlqKhHCpQxlR61tsM0SBmVKKLNGbNOTFCTlTBvPMMXMxRIXJyPGas/ONKMKgmSZH2IvyhUWitnT8CmolJIbJT+GBiMpb4tAPtzC5fvpiMBFmvUS3wDGNj48ZM6Us/iWnT39zzxJu3DbrlZrFbbruvWpyusnoao?cssminify=yes' type='text/css' media='all' />
+<link rel='stylesheet' id='print-css-5-1' href='https://s0.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1465851035h&cssminify=yes' type='text/css' media='print' />
+<style id='jetpack-global-styles-frontend-style-inline-css'>
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+</style>
+<link rel='stylesheet' id='all-css-8-1' href='https://s0.wp.com/_static/??-eJxti0EKgCAQAD+ULUaJl+gtJqbG6opr9P3o0CHqNAzMwFmEpdxcbpAOUfDwMTMU4iY2NLECB1Nj9g97y9zB/8Vko0GB5Oktn6kFlxxDGMEjrQbvYEmzVHIclNZy2i9lFDfR?cssminify=yes' type='text/css' media='all' />
+<script id='wpcom-actionbar-placeholder-js-extra'>
+var actionbardata = {"siteID":"81976675","siteName":"T\u1eeb coder \u0111\u1ebfn developer - Syn Aurious","siteURL":"https:\/\/k-ous.tk","siteHost":"k-ous.tk","icon":"<img alt='' src='https:\/\/secure.gravatar.com\/blavatar\/54084bfa40206518fb9e01fb53c7ccd9?s=50&d=https%3A%2F%2Fs0.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/twentyfourteen","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fk-ous.tk%252Fabout%252F","themeURL":"https:\/\/wordpress.com\/theme\/twentyfourteen\/","xhrURL":"https:\/\/k-ous.tk\/wp-admin\/admin-ajax.php","nonce":"9ba013a652","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"1d89f86f0f\" \/>","referer":"https:\/\/k-ous.tk\/about\/","canFollow":"1","feedID":"46755908","statusMessage":"","customizeLink":"https:\/\/toidicodedao.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Ftoidicodedao.wordpress.com%2Fabout%2F","postID":"1","shortlink":"https:\/\/wp.me\/P5xXSr-1","canEditPost":"","editLink":"https:\/\/wordpress.com\/page\/k-ous.tk\/1","statsLink":"https:\/\/wordpress.com\/stats\/post\/1\/k-ous.tk","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: Twenty Fourteen","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/read\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in Reader","viewReadPost":"View post in Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"Join 2,833 other followers","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fk-ous.tk%252Fabout%252F\">Log in now.<\/a>","stats":"Stats"}};
+</script>
+<script crossorigin='anonymous' type='text/javascript' src='https://s0.wp.com/_static/??-eJyFzUEKwkAMheELmQ4qtboQz9LWWGaYJGOSQXt7KyjUlau3+D944VFgFHZkD8lCEXNCs37CJtkm/FaSIWaEaqgLYIfIN/m6yGOuV7Q3TPeKOn+moch/EVCctHdc49WzZoei8pyXdqHz9rDrTse2a/fpBYU+RvU='></script>
+<script type='text/javascript'>
+	window.addEventListener( 'DOMContentLoaded', function() {
+		rltInitialize( {"token":null,"iframeOrigins":["https:\/\/widgets.wp.com"]} );
+	} );
+</script>
+<link rel='stylesheet' id='all-css-0-2' href='https://s0.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1625210320h&cssminify=yes' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s0.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563h&#038;ver=20110606' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://toidicodedao.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s0.wp.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress.com" />
+<link rel="canonical" href="https://k-ous.tk/about/" />
+<link rel='shortlink' href='https://wp.me/P5xXSr-1' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Fk-ous.tk%2Fabout%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Fk-ous.tk%2Fabout%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="About me" />
+<meta property="og:url" content="https://k-ous.tk/about/" />
+<meta property="og:description" content="Chào các bạn, mình là Nguyễn Văn Trường, tác giả của blog K-ous Nguyễn và youtube channel K-ous Nguyễn. Các bạn có thể gọi mình là Code Dạo, là Hoàng, hoặc Hoàng Code Dạo đều ok cả. Mình là một …" />
+<meta property="article:published_time" content="2014-12-31T15:52:09+00:00" />
+<meta property="article:modified_time" content="2020-03-19T03:48:37+00:00" />
+<meta property="og:site_name" content="Từ coder đến developer - K-ous Nguyễn" />
+<meta property="og:image" content="./imgs/theme.jpg" />
+<meta property="og:image:width" content="390" />
+<meta property="og:image:height" content="520" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:creator" content="@conanak99" />
+<meta name="twitter:site" content="@conanak99" />
+<meta name="twitter:text:title" content="About me" />
+<meta name="twitter:image" content="./imgs/theme.jpg?w=640" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="shortcut icon" type="image/x-icon" href="https://k-ous.tk/imgs/theme.jpg" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="https://k-ous.tk/imgs/theme.jpg" sizes="16x16" />
+<link rel="apple-touch-icon" href="https://k-ous.tk/imgs/theme.jpg" />
+<link rel='openid.server' href='https://k-ous.tk/?openidserver=1' />
+<link rel='openid.delegate' href='https://k-ous.tk/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://k-ous.tk/osd.xml" title="Từ coder đến developer - K-ous Nguyễn" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="Từ coder đến developer - K-ous Nguyễn" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Lập trình viên giỏi không phải chỉ biết code" /><meta name="msapplication-task" content="name=Subscribe;action-uri=https://k-ous.tk/feed/;icon-uri=https://secure.gravatar.com/blavatar/54084bfa40206518fb9e01fb53c7ccd9?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s0.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s0.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s0.wp.com/i/favicon.ico" /><meta name="description" content="Chào các bạn, mình là Nguyễn Văn Trường, tác giả của blog K-ous Nguyễn và youtube channel K-ous Nguyễn. Các bạn có thể gọi mình là Code Dạo, là Hoàng, hoặc Hoàng Code Dạo đều ok cả. Mình là một full-stack developer kiêm writer, blogger, Youtuber và đủ thứ lơ tơ mơ&hellip;" />
+		<script type="text/javascript">
+		function __ATA_CC() {var v = document.cookie.match('(^|;) ?personalized-ads-consent=([^;]*)(;|$)');return v ? 1 : 0;}
+		var __ATA_PP = { 'pt': 2, 'ht': 1, 'tn': 'twentyfourteen', 'amp': false, 'consent': __ATA_CC(), 'gdpr_applies': false, 'ad': { 'label': { 'text': 'Advertisements' }, 'reportAd': { 'text': 'Report this ad' } }, 'siteid': 81976675 };
+		var __ATA = __ATA || {};
+		__ATA.cmd = __ATA.cmd || [];
+		__ATA.criteo = __ATA.criteo || {};
+		__ATA.criteo.cmd = __ATA.criteo.cmd || [];
+		</script>
+		<script type="text/javascript">
+		(function(){var g=Date.now||function(){return+new Date};function h(a,b){a:{for(var c=a.length,d="string"==typeof a?a.split(""):a,e=0;e<c;e++)if(e in d&&b.call(void 0,d[e],e,a)){b=e;break a}b=-1}return 0>b?null:"string"==typeof a?a.charAt(b):a[b]};function k(a,b,c){c=null!=c?"="+encodeURIComponent(String(c)):"";if(b+=c){c=a.indexOf("#");0>c&&(c=a.length);var d=a.indexOf("?");if(0>d||d>c){d=c;var e=""}else e=a.substring(d+1,c);a=[a.substr(0,d),e,a.substr(c)];c=a[1];a[1]=b?c?c+"&"+b:b:c;a=a[0]+(a[1]?"?"+a[1]:"")+a[2]}return a};var l=0;function m(a,b){var c=document.createElement("script");c.src=a;c.onload=function(){b&&b(void 0)};c.onerror=function(){b&&b("error")};a=document.getElementsByTagName("head");var d;a&&0!==a.length?d=a[0]:d=document.documentElement;d.appendChild(c)}function n(a){var b=void 0===b?document.cookie:b;return(b=h(b.split("; "),function(c){return-1!=c.indexOf(a+"=")}))?b.split("=")[1]:""}function p(a){return"string"==typeof a&&0<a.length}
+		function r(a,b,c){b=void 0===b?"":b;c=void 0===c?".":c;var d=[];Object.keys(a).forEach(function(e){var f=a[e],q=typeof f;"object"==q&&null!=f||"function"==q?d.push(r(f,b+e+c)):null!==f&&void 0!==f&&(e=encodeURIComponent(b+e),d.push(e+"="+encodeURIComponent(f)))});return d.filter(p).join("&")}function t(a,b){a||((window.__ATA||{}).config=b.c,m(b.url))}var u=Math.floor(1E13*Math.random()),v=window.__ATA||{};window.__ATA=v;window.__ATA.cmd=v.cmd||[];v.rid=u;v.createdAt=g();var w=window.__ATA||{},x="s.pubmine.com";
+		w&&w.serverDomain&&(x=w.serverDomain);var y="//"+x+"/conf",z=window.top===window,A=window.__ATA_PP&&window.__ATA_PP.gdpr_applies,B="boolean"===typeof A?Number(A):null,C=window.__ATA_PP||null,D=z?document.referrer?document.referrer:null:null,E=z?window.location.href:document.referrer?document.referrer:null,F,G=n("__ATA_tuuid");F=G?G:null;var H=window.innerWidth+"x"+window.innerHeight,I=n("usprivacy"),J=r({gdpr:B,pp:C,rid:u,src:D,ref:E,tuuid:F,vp:H,us_privacy:I?I:null},"",".");
+		(function(a){var b=void 0===b?"cb":b;l++;var c="callback__"+g().toString(36)+"_"+l.toString(36);a=k(a,b,c);window[c]=function(d){t(void 0,d)};m(a,function(d){d&&t(d)})})(y+"?"+J);}).call(this);
+		</script><!-- There is no amphtml version available for this URL. --><style type="text/css" id="custom-colors-css">	.site-description {
+		margin-top: 13px;
+	}
+
+	.search-box .search-field {
+		border-style: solid;
+		border-width: 1px;
+	}
+
+	.primary-sidebar .widget input,
+	.primary-sidebar .widget textarea,
+	.footer-sidebar .widget input,
+	.footer-sidebar .widget textarea {
+		background-color: #fff;
+		color: #2b2b2b;
+	}
+
+	@media screen and (max-width: 782px) {
+		.primary-navigation ul ul,
+		.primary-navigation ul ul a:hover,
+		.primary-navigation ul ul li.focus > a,
+		.primary-navigation li:hover > a,
+		.primary-navigation li.focus > a,
+		.secondary-navigation ul ul,
+		.secondary-navigation ul ul a:hover,
+		.secondary-navigation ul ul li.focus > a,
+		.secondary-navigation li:hover > a,
+		.secondary-navigation li.focus > a {
+			background-color: transparent !important;
+		}
+	}
+
+	.featured-content,
+	.featured-content .entry-header,
+	.slider-direction-nav a {
+		background-color: #efefef;
+	}
+
+	.grid .featured-content .entry-header {
+		border-color: #efefef;
+	}
+
+	.featured-content .hentry,
+	.featured-content a,
+	.featured-content .entry-meta,
+	.slider-direction-nav a:before {
+		color: #2b2b2b;
+	}
+
+	.slider-control-paging a:before {
+		background-color: #ccc;
+	}
+
+	.slider-control-paging a:hover:before {
+		background-color: #777;
+	}
+
+	.slider-control-paging .slider-active:before,
+	.slider-control-paging .slider-active:hover:before {
+		background-color: #222;
+	}
+    body {background-image: url(https://media1.giphy.com/media/hQLdTRqieSs0jybz2I/200.gif);
+	 background-color: #00aba9;}
+</style>
+</head>
+
+<body class="page-template-default page page-id-1 custom-background wp-custom-logo wp-embed-responsive customizer-styles-applied masthead-fixed singular highlander-enabled highlander-light">
+<div id="page" class="hfeed site">
+	
+	<header id="masthead" class="site-header" role="banner">
+		<div class="header-main">
+			<h1 class="site-title"><a href="https://k-ous.tk/" rel="home">Từ coder đến developer &#8211; K-ous Nguyễn</a></h1>
+
+			<div class="search-toggle">
+				<a href="#search-container" class="screen-reader-text" aria-expanded="false" aria-controls="search-container">Search</a>
+			</div>
+
+			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+				<button class="menu-toggle">Primary Menu</button>
+				<a class="screen-reader-text skip-link" href="#content">Skip to content</a>
+				<div class="menu-menu-container"><ul id="primary-menu" class="nav-menu"><li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-10"><a href="https://k-ous.tk/">Home</a></li>
+<li id="menu-item-2378" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2378"><a title="Những series/bài viết hay nhất trên blog" href="https://k-ous.tk/2016/05/26/tong-hop-nhung-seriesbai-viet-hay-nhat-tren-blog/">Bài viết hay</a></li>
+<li id="menu-item-12" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-12"><a title="Những kiến thức technical hay ho" href="https://k-ous.tk/category/chuyen-coding/">Chuyện coding</a>
+<ul class="sub-menu">
+    <li id="menu-item-3739" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3739"><a title="Những kiến thức vô cùng cơ bản về bảo mật cho developer" target="_blank" rel="noopener" href="https://k-ous.tk/series-bao-mat-nhap-mon/">Series Bảo mật nhập môn</a></li>
+	<li id="menu-item-3756" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3756"><a title="CCùng nhập môn lập trình nhúng qua các dự án cơ bản" target="_blank" rel="noopener" href="https://k-ous.tk/series-nhung-du-an-arduino-ba-dao.html">Series những dự án arduino bá đạo</a></li>
+	<li id="menu-item-3742" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3742"><a title="Cùng làm bot chat , bot follow , bot like ngay nào ..." target="_blank" rel="noopener" href="https://k-ous.tk/lam-bot-facebook.html">Series làm mấy con bot tiện ích cho facebook</a></li>
+	<li id="menu-item-3738" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3738"><a title="Những điều thú vị trong C#" target="_blank" rel="noopener" href="https://k-ous.tk/404.html">Series C toàn tập</a></li>
+	<li id="menu-item-3740" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3740"><a title="Giới thiệu những điểm sida khó nhằn của JavaScript mà bao senior developer cũng sức đầu mẻ trán" target="_blank" rel="noopener" href="https://k-ous.tk/404.html">Series bảo mật HTTPS </a></li>
+	<li id="menu-item-3749" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3749"><a title="Tìm hiểu về JavaScript với phong cách kiếm hiệp" target="_blank" rel="noopener" href="https://k-ous.tk/404.html">Series JS Truyền Kì</a></li>
+	<li id="menu-item-3741" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3741"><a title="Quay về với những thứ tinh túy, nền tảng của lập trình" target="_blank" rel="noopener" href="https://k-ous.tk/404.html">Series Phản Phác Qui Chân</a></li>
+</ul>
+</li>
+<li id="menu-item-14" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-14"><a title="Những kinh nghiệm làm việc, kĩ năng mềm mà ai cũng nên biết" href="https://k-ous.tk/404.html">Chuyện học hành</a>
+<ul class="sub-menu">
+	<li id="menu-item-3752" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3752"><a target="_blank" rel="noopener" href="https://k-ous.tk/download-giao-trinh-hoc-lap-trinh.html">Download các giáo trình học nhiều ngôn ngữ</a></li>
+	<li id="menu-item-5016" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5016"><a href="https://k-ous.tk/404.html">Series hack bừa 1 trang web HTTP</a></li>
+	<li id="menu-item-4492" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4492"><a href="https://k-ous.tk/404.html">Series Nhập Môn Lập Trình Không Code</a></li>
+	<li id="menu-item-5018" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5018"><a href="https://k-ous.tk/404.html">Series hack xem lịch sử trình duyệt anh hàng xóm</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3744"><a href="https://k-ous.tk/404.html">Series những điều 1 hacker chân chính nên biết</a></li>
+	<li id="menu-item-3743" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3743"><a target="_blank" rel="noopener" href="https://k-ous.tk/404.html">Cách tiếp cận công nghệ mới</a></li>
+	<li id="menu-item-3745" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3745"><a target="_blank" rel="noopener" href="https://k-ous.tk/404.html">Muôn nẻo đường tìm việc</a></li>
+	<li id="menu-item-3746" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3746"><a target="_blank" rel="noopener" href="https://k-ous.tk/mat-toi-cua-nganh-cong-nghiep-it-phan-1/">Mặt tối của ngành IT</a></li>
+</ul>
+</li>
+<li id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-13"><a title="Một số chuyện linh tinh, cái nhìn về ngành nghề" href="https://k-ous.tk/404.html">Chuyện linh tinh</a>
+<ul class="sub-menu">
+	<li id="menu-item-5017" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5017"><a href="https://k-ous.tk/cac-buoc-lam-the-metap.html">Series các bước làm thẻ K-ous TAP</a></li>
+	<li id="menu-item-3747" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3747"><a title="Kinh nghiệm học tiếng Anh, ôn thi TOEIC, IELTS" target="_blank" rel="noopener" href="https://k-ous.tk/chuyen-hoc-tieng-anh-phan-1-toi-da-hoc-tieng-anh-nhu-the-nao.html">Series Chuyện học tiếng Anh</a></li>
+	<li id="menu-item-3755" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3755"><a title="Review những sách hay mình đã đọc" target="_blank" rel="noopener" href="https://k-ous.tk.com/tag/review/">Review sách</a></li>
+	<li id="menu-item-3748" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3748"><a title="Một số trải nghiệm thú vị của mình khi học, sinh hoạt và làm việc tại Quảng Châu, Trung Quốc" target="_blank" rel="noopener" href="https://k-ous.tk/tag/series-chuyen-ben-khua/">Series Chuyện bên Khựa</a></li>
+	<li id="menu-item-3750" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3750"><a title="Thay lời muốn nói – gởi tới những người thân yêu của mỗi lập trình viên" target="_blank" rel="noopener" href="https://k-ous.tk/2016/04/21/thay-loi-muon-noi-goi-toi-nhung-nguoi-than-yeu-cua-moi-lap-trinh-vien/">Thay lời muốn nói</a></li>
+	<li id="menu-item-3751" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3751"><a title="Một số điểm bạn nên xem ở tôi" target="_blank" rel="noopener" href="https://k-ous.tk/piano.html">Luyện tay trên bàn phím...(piano)</a></li>
+	<li id="menu-item-3753" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3753"><a title="Tạo động lực học tập và làm việc – Sức mạnh của thói quen" target="_blank" rel="noopener" href="https://k-ous.tk/404.html">Minecraft - Các bản hack liệu còn thông dụng ?</a></li>
+	<li id="menu-item-3754" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3754"><a title="C# là ngôn ngữ tuyệt vời nhất. Java, PHP, C, C++, Ruby chỉ toàn là thứ rẻ tiền" target="_blank" rel="noopener" href="https://k-ous.tk/404.html">Adobe After Effect - Crack</a></li>
+</ul>
+</li>
+<li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1 current_page_item menu-item-11"><a title="Thông tin về tác giả" href="https://k-ous.tk/about/" aria-current="page">About me</a></li>
+</ul></div>			</nav>
+		</div>
+
+		<div id="search-container" class="search-box-wrapper hide">
+			<div class="search-box">
+				<form role="search" method="get" class="search-form" action="https://k-ous.tk/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>			</div>
+		</div>
+	</header><!-- #masthead -->
+
+	<div id="main" class="site-main">
+
+<div id="main-content" class="main-content">
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+			
+<article id="post-1" class="post-1 page type-page status-publish hentry">
+	<header class="entry-header"><h1 class="entry-title">About me</h1></header><!-- .entry-header -->
+	<div class="entry-content">
+		<p style="text-align:left;">Chào các bạn, mình têm thật là <strong>Nguyễn Văn Trường</strong>, tên định danh thường thấy là <strong>K-ous Nguyễn</strong> tác giả của blog này và <a href="http://bit.ly/codedaotube">youtube channel K-ous Nguyễn</a><strong>. </strong>Các bạn có thể gọi mình là Code Dạo, là Hoàng, hoặc Hoàng Code Dạo đều ok cả.</p>
+<p style="text-align:left;">Mình là một <a href="https://k-ous.tk/2015/08/18/nhung-ki-nang-can-co-cua-mot-web-developer/">coder trẻ trâu </a> hay chém gió như các bạn đã biết.</p>
+<figure data-shortcode="caption" id="attachment_5163" aria-describedby="caption-attachment-5163" style="width: 417px" class="wp-caption aligncenter"><a href="https://toidicodedao.files.wordpress.com/2017/12/youtube-channel-toidicodedao.jpg"><img loading="lazy" data-attachment-id="5163" data-permalink="https://k-ous.tk/2018/02/08/thong-bao-dong-cua-blog-toi-di-code-dao-2-tuan-de-nghi-tet/youtube-channel-toidicodedao/" data-orig-file="https://toidicodedao.files.wordpress.com/2017/12/youtube-channel-toidicodedao.jpg" data-orig-size="1138,640" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="youtube-channel-toidicodedao" data-image-description="&lt;p&gt;Youtube Channel của K-ous Nguyễn&lt;/p&gt;
+" data-image-caption="&lt;p&gt;Youtube Channel của K-ous Nguyễn&lt;/p&gt;
+" data-medium-file="https://toidicodedao.files.wordpress.com/2017/12/youtube-channel-toidicodedao.jpg?w=300" data-large-file="https://toidicodedao.files.wordpress.com/2017/12/youtube-channel-toidicodedao.jpg?w=474" class=" wp-image-5163" src="https://toidicodedao.files.wordpress.com/2017/12/youtube-channel-toidicodedao.jpg?w=417&#038;h=235" alt="Youtube Channel của K-ous Nguyễn" width="417" height="235" srcset="https://toidicodedao.files.wordpress.com/2017/12/youtube-channel-toidicodedao.jpg?w=417&amp;h=235 417w, https://toidicodedao.files.wordpress.com/2017/12/youtube-channel-toidicodedao.jpg?w=834&amp;h=470 834w, https://toidicodedao.files.wordpress.com/2017/12/youtube-channel-toidicodedao.jpg?w=150&amp;h=84 150w, https://toidicodedao.files.wordpress.com/2017/12/youtube-channel-toidicodedao.jpg?w=300&amp;h=169 300w, https://toidicodedao.files.wordpress.com/2017/12/youtube-channel-toidicodedao.jpg?w=768&amp;h=432 768w" sizes="(max-width: 417px) 100vw, 417px" /></a><figcaption id="caption-attachment-5163" class="wp-caption-text">Mình là một <a href="https://k-ous.tk/2015/08/18/nhung-ki-nang-can-co-cua-mot-web-developer/">full-stack developer</a> kiêm writer, blogger, Youtuber và đủ thứ lơ tơ mơ khác nữa</figcaption></figure>
+<h3 style="text-align:left;"><strong>Về blog này</strong></h3>
+<p>Vốn sinh ra trong một gia đình có tư tưởng không quá lạc hậu thì tôi đã tiếp cận với máy tính từ khoảng năm lớp 1 vì thế không biết từ lúc nào tôi có ý tưởng sẽ làm 1 lập trình viên giỏi. Vì chưa giỏi nên hiện tại các bạn có thể gọi tôi là  &#8220;K-ous Nguyễn&#8221;.</p>
+<p>Đùa đấy, thật ra do hồi xưa mấy thầy ở trường hay doạ là &#8220;đứa nào ko lo học ra trường chỉ có nước đi code dạo&#8221;, nên mình lấy tên blog là K-ous Nguyễn luôn!</p>
+<p>Đây là một blog <strong>không phải là hoàn toàn về IT</strong></p>
+<p>Nội dung blog một nửa là về <a href="https://k-ous.tk/category/chuyen-coding/">chuyện cày code </a>, một nửa còn lại là <a href="https://k-ous.tk/category/chuyen-nghe-nghiep/"> những kinh nghiệm </a>  , nửa còn lại không biết lấy đâu ra nữa là phiên bản ngoài lề <em>chuyện linh tinh</em> ở đây có mấy mục không liên quan lắm nhưng do mình thích nên mình up thôi...</p>
+
+<h3><strong>K-ous à ? tên có vẻ lạ quá nhưng sao thấy hay?</strong></h3>
+<p>K-ous là một tên thửa xưa mình có cùng mấy đứa bạn định nghĩa lại mấy từ tiếng anh có nghĩa. Chỉ đơn giản là mấy đứa kia thích ăn cay nên đặt nick name cho mình là "cây ớt" lâu dần mình cũng chưa đăng kí lên cục sở hữu trí tuệ mà tạm sử dụng cái tên này bởi vì mình nhận ra......mình lười :)</p>
+<p>BONUS : Đây mới là ý nghĩa thực sự của cái tên <strong>K-ous </strong> </p>
+<ul>
+    <li> <em>-ous</em> : phiên âm trong tiếng anh đọc gần giống như "US" mang một ý nghĩa khẳng định rằng tôi không hoạt động một mình (được hiểu đơn giản như anonymous)</li>
+    <li><em>k-</em>    : kí tự này nhìn vào chỉ để các bạn nhận ra và suy đoán rằng k-ous chắc chắn là một hai từ có nghĩa viết tắt lại và từ thứ nhất bắt đầu là kí tự <em><strong>'k'</strong></em>    đúng vậy K- là viết tắt của <em>keep going sir</em> </li>
+</ul>
+<p>Chút nắng vương sao gom thành mùa hạ</p>
+<p>chút tình xa lại sao giữ nổi người ta ...</p>
+<figure data-shortcode="caption" id="attachment_7653" aria-describedby="caption-attachment-7653" style="width: 278px" class="wp-caption aligncenter"><a href="https://toidicodedao.files.wordpress.com/2019/12/1.jpg"><img loading="lazy" data-attachment-id="7653" data-permalink="https://k-ous.tk/2019/12/31/he-nho-cac-ban-minh-la-toi-di-code-dao/1-60/" data-orig-file="https://toidicodedao.files.wordpress.com/2019/12/1.jpg" data-orig-size="640,640" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="1" data-image-description="" data-image-caption="&lt;p&gt;Các bạn có thể mua sách tại bit.ly/codedao-tk ủng hộ mình nhé!&lt;/p&gt;
+" data-medium-file="https://toidicodedao.files.wordpress.com/2019/12/1.jpg?w=300" data-large-file="https://toidicodedao.files.wordpress.com/2019/12/1.jpg?w=474" class=" wp-image-7653" src="https://toidicodedao.files.wordpress.com/2019/12/1.jpg?w=278&#038;h=278" alt="" width="278" height="278" srcset="https://toidicodedao.files.wordpress.com/2019/12/1.jpg?w=278&amp;h=278 278w, https://toidicodedao.files.wordpress.com/2019/12/1.jpg?w=556&amp;h=556 556w, https://toidicodedao.files.wordpress.com/2019/12/1.jpg?w=150&amp;h=150 150w, https://toidicodedao.files.wordpress.com/2019/12/1.jpg?w=300&amp;h=300 300w" sizes="(max-width: 278px) 100vw, 278px" /></a><figcaption id="caption-attachment-7653" class="wp-caption-text">Các bạn có thể mua sách tại <a href="http://bit.ly/codedao-tk">bit.ly/codedao-tk</a> ủng hộ mình nhé!</figcaption></figure>
+<h3><strong>Về nội dung , âm thanh , hình ảnh trên blog này :</strong></h3>
+<p>Mình cam kết 100% nội dung này là do mình viết , ý tưởng thì chỉ một số thôi còn phần lớn là mình lấy trên mạng và làm lại theo cách của mình .</p>
+<p>Hình ảnh cũng vậy , thường thì chúng khá quan trọng đến việc nhìn nhận của từng người với vấn đề được nêu ra , nhưng mà mình cũng lười dùng <strong>photoshop</strong> nên là không một cái ảnh nào trên blog này là của mình nha.</p>
+<p>Về nhạc nền thường thấy ở một số bài : <em>"Phải hầu như bản nhạc guitar đó do mình chơi , mình ko có fingerstyle lại mà lấy hẳn tab của mấy anh youtuber khác"</em></p>
+
+
+<h3 style="text-align:left;"><strong>Về bản thân mình :</strong></h3>
+<p>Mình đã lên ý tưởng cho việc thành lập một ứng dụng lớn và 2 website từ năm mình lớp 8 . Trong đó 1 cái là blog , một cái là thứ gì đó cao hơn dùng các ngôn ngữ back-end như nodejs chẳng hạn . Tạm thời thì mình không công khai được .</p>
+<p><a href="./imgs/theme.jpg"><img loading="lazy" data-attachment-id="2462" data-permalink="https://k-ous.tk/about/img_1502-2/" data-orig-file="./imgs/theme.jpg" data-orig-size="390,520" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.4&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 5&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1417711756&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.12&quot;,&quot;iso&quot;:&quot;100&quot;,&quot;shutter_speed&quot;:&quot;0.05&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="img_1502" data-image-description="" data-image-caption="" data-medium-file="./imgs/theme.jpg?w=225" data-large-file="./imgs/theme.jpg?w=390" class="aligncenter wp-image-2462" src="./imgs/theme.jpg?w=259&#038;h=345" alt="img_1502" width="259" height="345" srcset="./imgs/theme.jpg?w=259&amp;h=345 259w, ./imgs/theme.jpg?w=113&amp;h=150 113w, ./imgs/theme.jpg?w=225&amp;h=300 225w, ./imgs/theme.jpg 390w" sizes="(max-width: 259px) 100vw, 259px" /></a></p>
+<p> Nếu các bạn có yêu thích mình thì có thể follow fanpage của mình là <a href="">Syn Aurious</a> nha ! Cái tên tự mình nghĩ ra đấy chứ không ý nghĩa gì đâu</p>
+<p><a href="https://toidicodedao.files.wordpress.com/2016/03/photo-3-18-16-11-50-50-am.jpg"><img loading="lazy" data-attachment-id="1949" data-permalink="https://k-ous.tk/2016/05/05/mot-lan-theo-chan-team-di-tiep-thi-quang-cao-va-code-dao/photo-3-18-16-11-50-50-am/" data-orig-file="https://toidicodedao.files.wordpress.com/2016/03/photo-3-18-16-11-50-50-am-e1521878972974.jpg" data-orig-size="3264,2056" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1458301850&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.15&quot;,&quot;iso&quot;:&quot;32&quot;,&quot;shutter_speed&quot;:&quot;0.0052631578947368&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Photo 3-18-16, 11 50 50 AM" data-image-description="" data-image-caption="" data-medium-file="https://toidicodedao.files.wordpress.com/2016/03/photo-3-18-16-11-50-50-am-e1521878972974.jpg?w=300" data-large-file="https://toidicodedao.files.wordpress.com/2016/03/photo-3-18-16-11-50-50-am-e1521878972974.jpg?w=474" class="aligncenter wp-image-1949" src="https://toidicodedao.files.wordpress.com/2016/03/photo-3-18-16-11-50-50-am.jpg?w=281&#038;h=211" alt="Photo 3-18-16, 11 50 50 AM" width="281" height="211" /></a></p>
+
+<h3 style="text-align:left;"><strong>Hỏi đáp cho vui!</strong></h3>
+<p><strong>1. Ơ sao mình xem bạn từ lúc bạn mới update web này mà sao nhiều lỗi 404 quá zậy</strong></p>
+<p>Thường thì có một kinh nghiệm các bạn nên học tập : đó là việc đừng tốn công làm một cái gì to lớn để up lên mà không ai biết tới , thay vào đó hay up lên những thứ cơ bản nhất rồi xem xét vào đó và nâng cấp dần lên xem người dùng ưa thích mảng nào . Hoặc hiểu như kiểu <em> Các bạn làm được đến đâu up dần đến đó , lúc đầu chưa có ai xem , dần dần mình làm xon , nhiều người xem là vừa.</em></p>
+<p><strong>2. Dào, chỉ có chém gió là giỏi, mới đi làm một vài năm biết cái gì mà dạy người khác?</strong></p>
+<p>Kiến thức có thể thu thập thông qua kinh nghiệm hoặc sách vở, ko nhất thiết cứ làm lâu năm thì sẽ biết nhiều.</p>
+<p>Mình <a href="https://k-ous.tk/2015/12/29/moi-thang-mot-cuon-sach-nhung-sach-hay-minh-da-doc-trong-nam-2015-phan-1/">đọc khá nhiều sách</a> (Series For Dummies, Head First, Clean Code, Getting Real, Humanware, The Mithical Man-Month&#8230;), trong đó có nhiều thứ khá hay, rất đáng để chia sẻ.</p>
+<p>Một góp ý nữa, mình ko &#8220;dạy&#8221; ai cả. Bản thân mình bây giờ dù có title là senior những vẫn luôn giữ thái độ của một junior developer; bởi vì xung quanh mình vẫn có rất nhiều thứ để học</p>
+<p>Hướng dẫn cho người khác cũng là một quá trình học, giúp mình giỏi hơn. Do đó mình rất hoan nghênh các developer khác vào &#8220;dạy&#8221; mfinh và mọi người.</p>
+<p><strong>3.Bạn có nhận làm mấy dự án nhỏ không ?</strong></p>
+<p>Thực ra đến hiện tại mình có làm trên vlance nha nhưng mà nhìn nhận lại , 1 người cày được fullstack là cả 1 vấn đề đấy ...</p>
+<p>Hiện tại mình có nhận làm một số dự án nhỏ như sau :</p>
+<ul>
+<li>1. Tạo 1 web front-end để làm blog ( ví dụ như cái web này ) tùy vào độ phức tạp thì mình lấy giá rẻ nhất 50k cho 1 page . </li>
+<li>2. viết code arduino , thường thì ngày xưa mình có lấy tiền nhưng nay thì mình đi giúp đỡ thôi</li>
+<li>3. Làm app thuê , cái này giá cụ thể thì phải thương lượng trước nha</li>
+<p>4. Tăng subcribe youtube với 2 sub là <em>1.000vnđ</em> , cam kết không tụt sub nha , <em>Lưu ý mình không nhận quá 1k sub / ngày nha</em>  </p>
+<li>5. Làm thẻ K-oustap với một giao diện khác với Metap , Tao táp , Full toàn bộ chỉ từ 50k - 75k cho 1 thẻ thôi nha</li></ul>
+<p>Bạn nào muốn liên hệ mình làm thì hãy donate cho mình trên <a href="https://playerduo.com/k-ous1608">playerdou</a> với nội dung tin nhắn là link facebook với dịch vụ số <strong>1 , 2 , 3, 5</strong> hoặc nếu là dịch vụ số 4 thì các bạn donate số tiền và gửi hẳn cho mình url youtube luôn nha. </p>
+</ul>
+<p><strong>4. Ơ sao bạn không có dịch vụ nào back-end thế</p>
+<p>tạm thời mình chưa có tiền đầu tư vps</p>
+<p><strong>5. Câu nói ưu thích của anh là gì?</strong></p>
+<p><a href="https://toidicodedao.files.wordpress.com/2019/04/9.jpg"><img loading="lazy" data-attachment-id="6858" data-permalink="https://k-ous.tk/2019/05/07/tam-biet-algomerchant-startup-dau-tien/9-8/" data-orig-file="https://toidicodedao.files.wordpress.com/2019/04/9.jpg" data-orig-size="1200,675" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;Copyright 2016. All right reserved.&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="9" data-image-description="" data-image-caption="&lt;p&gt;Đến giờ mình mới thấm thía câu nói của anh Nguyễn Văn Trường &#8211; tác giả cuốn Code Dạo Kí Sự&lt;/p&gt;
+" data-medium-file="https://toidicodedao.files.wordpress.com/2019/04/9.jpg?w=300" data-large-file="https://toidicodedao.files.wordpress.com/2019/04/9.jpg?w=474" class="wp-image-6858 aligncenter" src="https://toidicodedao.files.wordpress.com/2019/04/9.jpg?w=408&#038;h=230" alt="" width="408" height="230" srcset="https://toidicodedao.files.wordpress.com/2019/04/9.jpg?w=408&amp;h=230 408w, https://toidicodedao.files.wordpress.com/2019/04/9.jpg?w=816&amp;h=460 816w, https://toidicodedao.files.wordpress.com/2019/04/9.jpg?w=150&amp;h=84 150w, https://toidicodedao.files.wordpress.com/2019/04/9.jpg?w=300&amp;h=169 300w, https://toidicodedao.files.wordpress.com/2019/04/9.jpg?w=768&amp;h=432 768w" sizes="(max-width: 408px) 100vw, 408px" /></a></p>
+<p><strong>6. Liên hệ với tớ tại qua đâu&#8230;.</strong></p>
+<p>Địa chỉ mail của mình là: <a href="mailto:nvt200609@gmail.com">nvt200609@gmail.com</a>.</p>
+<p>Facebook cá nhân: <a href="https://www.facebook.com/Kous.Nguyen">facebook.com/Kous.Nguyen</a>.</p>
+<p>Hiện tại mình không add friend người lạ. Nếu quan tâm đến bài viết và kinh nghiệm lập trình, các bạn có thể follow fanpage tại: <a href="http://fb.com/toidicodedao">fb.com/toidicodedao</a> nhé!</p>
+			<div id="atatags-819766751-612274756aa18"></div>
+			
+			<div id="atatags-819766755-612274756aa4b">
+        <script type="text/javascript">
+            __ATA.cmd.push(function() {
+                __ATA.initVideoSlot('atatags-819766755-612274756aa4b', {
+                    sectionId: '819766755',
+                    format: 'inread'
+                });
+            });
+        </script>
+    </div><div id="jp-post-flair" class="sharedaddy sd-rating-enabled sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-official sd-sharing"><div class="sd-content"><ul><li class="share-facebook"><div class="fb-share-button" data-href="https://k-ous.tk/about/" data-layout="button_count"></div></li><li class="share-linkedin"><div class="linkedin_button"><script type="in/share" data-url="https://k-ous.tk/about/" data-counter="right"></script></div></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-81976675-1-612274756d87d' data-src='//widgets.wp.com/likes/index.html?ver=20210818#blog_id=81976675&amp;post_id=1&amp;origin=toidicodedao.wordpress.com&amp;obj_id=81976675-1-612274756d87d&amp;domain=k-ous.tk' data-name='like-post-frame-81976675-1-612274756d87d' data-title='Like or Reblog'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div></div>	</div><!-- .entry-content -->
+</article><!-- #post-1 -->
+
+<div id="comments" class="comments-area">
+
+	
+	<h2 class="comments-title">
+		84 thoughts on &ldquo;About me&rdquo;	</h2>
+
+			<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
+		<h1 class="screen-reader-text">Comment navigation</h1>
+		<div class="nav-previous"><a href="https://k-ous.tk/about/comment-page-1/#comments" >&larr; Older Comments</a></div>
+		<div class="nav-next"></div>
+	</nav><!-- #comment-nav-above -->
+	
+	<ol class="comment-list">
+				<li id="comment-21582" class="comment even thread-even depth-1 parent highlander-comment">
+			<article id="div-comment-21582" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://1.gravatar.com/avatar/46008528540abff1a9f136b8239e18bd?s=34&#038;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D34&#038;r=G' class='avatar avatar-34' height='34' width='34' />						<b class="fn">Sunbeyoun</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://k-ous.tk/about/comment-page-2/#comment-21582"><time datetime="2020-08-06T15:50:43+07:00">06/08/2020 at 3:50 pm</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Thú vị, phải chi tôi biết cái blog lơ tơ mơ này sớm hơn.</p>
+<p id="comment-like-21582" data-liked=comment-not-liked class="comment-likes comment-not-liked"><a href="https://k-ous.tk/about/?like_comment=21582&#038;_wpnonce=fc5095a970" class="comment-like-link needs-login" rel="nofollow" data-blog="81976675"><span>Like</span></a><span id="comment-like-count-21582" class="comment-like-feedback">Liked by <a href="#" class="view-likers" data-like-count="1">1 person</a></span></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://k-ous.tk/about/comment-page-2/?replytocom=21582#respond' data-commentid="21582" data-postid="1" data-belowelement="div-comment-21582" data-respondelement="respond" data-replyto="Reply to Sunbeyoun" aria-label='Reply to Sunbeyoun'>Reply</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-21590" class="comment odd alt depth-2 highlander-comment">
+			<article id="div-comment-21590" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://1.gravatar.com/avatar/d118baa1674dc9ac1f48212c91f63481?s=34&#038;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D34&#038;r=G' class='avatar avatar-34' height='34' width='34' />						<b class="fn">Hazu</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://k-ous.tk/about/comment-page-2/#comment-21590"><time datetime="2020-08-07T09:26:14+07:00">07/08/2020 at 9:26 am</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>hì hì, tuy là lời khen, nhưng blog này hok &#8221; lơ tơ mơ &#8221; đâu, tâm huyết của người viết cả đấy bạn ạ. Thank you.</p>
+<p id="comment-like-21590" data-liked=comment-not-liked class="comment-likes comment-not-liked"><a href="https://k-ous.tk/about/?like_comment=21590&#038;_wpnonce=cf469749f7" class="comment-like-link needs-login" rel="nofollow" data-blog="81976675"><span>Like</span></a><span id="comment-like-count-21590" class="comment-like-feedback">Like</span></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://k-ous.tk/about/comment-page-2/?replytocom=21590#respond' data-commentid="21590" data-postid="1" data-belowelement="div-comment-21590" data-respondelement="respond" data-replyto="Reply to Hazu" aria-label='Reply to Hazu'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-22102" class="comment byuser comment-author-kienoiinc even thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-22102" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://1.gravatar.com/avatar/a6178e21d258022a2fcf8e338dfaaaf6?s=34&#038;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D34&#038;r=G' class='avatar avatar-34' height='34' width='34' />						<b class="fn"><a href='https://www.kienoi.com' rel='external nofollow ugc' class='url'>kienoiinc</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://k-ous.tk/about/comment-page-2/#comment-22102"><time datetime="2020-09-26T22:43:49+07:00">26/09/2020 at 10:43 pm</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Anh Nguyễn Văn Trường,</p>
+<p>Em có thể được trao đổi link liên kết với blog của anh được không ạ.<br />
+Blog của em là Kienoi. com.</p>
+<p id="comment-like-22102" data-liked=comment-not-liked class="comment-likes comment-not-liked"><a href="https://k-ous.tk/about/?like_comment=22102&#038;_wpnonce=9ffc14fd93" class="comment-like-link needs-login" rel="nofollow" data-blog="81976675"><span>Like</span></a><span id="comment-like-count-22102" class="comment-like-feedback">Like</span></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://k-ous.tk/about/comment-page-2/?replytocom=22102#respond' data-commentid="22102" data-postid="1" data-belowelement="div-comment-22102" data-respondelement="respond" data-replyto="Reply to kienoiinc" aria-label='Reply to kienoiinc'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-23194" class="comment odd alt thread-even depth-1 highlander-comment">
+			<article id="div-comment-23194" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://2.gravatar.com/avatar/e8524d9aa9a7ed18ae861f0e373c364d?s=34&#038;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D34&#038;r=G' class='avatar avatar-34' height='34' width='34' />						<b class="fn">Long Lee</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://k-ous.tk/about/comment-page-2/#comment-23194"><time datetime="2020-12-16T18:00:58+07:00">16/12/2020 at 6:00 pm</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>&#8220;Hướng dẫn cho người khác cũng là một quá trình học, giúp mình giỏi hơn. Do đó mình rất hoan nghênh các developer khác vào “dạy” mfinh và mọi người.&#8221; </p>
+<p>Phần này bug typo nè Hoàng ^^</p>
+<p id="comment-like-23194" data-liked=comment-not-liked class="comment-likes comment-not-liked"><a href="https://k-ous.tk/about/?like_comment=23194&#038;_wpnonce=9ee6bc7c61" class="comment-like-link needs-login" rel="nofollow" data-blog="81976675"><span>Like</span></a><span id="comment-like-count-23194" class="comment-like-feedback">Liked by <a href="#" class="view-likers" data-like-count="1">1 person</a></span></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://k-ous.tk/about/comment-page-2/?replytocom=23194#respond' data-commentid="23194" data-postid="1" data-belowelement="div-comment-23194" data-respondelement="respond" data-replyto="Reply to Long Lee" aria-label='Reply to Long Lee'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-23352" class="comment even thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-23352" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/f67eb4d1e035beeb25552db7cd9af72e?s=34&#038;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D34&#038;r=G' class='avatar avatar-34' height='34' width='34' />						<b class="fn">Mạnh</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://k-ous.tk/about/comment-page-2/#comment-23352"><time datetime="2020-12-23T16:00:38+07:00">23/12/2020 at 4:00 pm</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>&#8220;Code dạo&#8221; là gì anh Hoàng ? code thì là lập trình rồi, còn dạo ở đây nghĩa là gì ?</p>
+<p id="comment-like-23352" data-liked=comment-not-liked class="comment-likes comment-not-liked"><a href="https://k-ous.tk/about/?like_comment=23352&#038;_wpnonce=9913e4c36e" class="comment-like-link needs-login" rel="nofollow" data-blog="81976675"><span>Like</span></a><span id="comment-like-count-23352" class="comment-like-feedback">Liked by <a href="#" class="view-likers" data-like-count="1">1 person</a></span></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://k-ous.tk/about/comment-page-2/?replytocom=23352#respond' data-commentid="23352" data-postid="1" data-belowelement="div-comment-23352" data-respondelement="respond" data-replyto="Reply to Mạnh" aria-label='Reply to Mạnh'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-27356" class="comment byuser comment-author-lehoaibac odd alt thread-even depth-1 highlander-comment">
+			<article id="div-comment-27356" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/f6ea0dcb503bada23589179888c9c925?s=34&#038;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D34&#038;r=G' class='avatar avatar-34' height='34' width='34' />						<b class="fn"><a href='https://hoaibacfx.com/' rel='external nofollow ugc' class='url'>HoaiBacFX</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://k-ous.tk/about/comment-page-2/#comment-27356"><time datetime="2021-06-14T14:20:07+07:00">14/06/2021 at 2:20 pm</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>khá hay,tôi k phải dân IT nhưng rất thích xem kênh của Hoàng</p>
+<p id="comment-like-27356" data-liked=comment-not-liked class="comment-likes comment-not-liked"><a href="https://k-ous.tk/about/?like_comment=27356&#038;_wpnonce=abd6aa37fb" class="comment-like-link needs-login" rel="nofollow" data-blog="81976675"><span>Like</span></a><span id="comment-like-count-27356" class="comment-like-feedback">Like</span></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://k-ous.tk/about/comment-page-2/?replytocom=27356#respond' data-commentid="27356" data-postid="1" data-belowelement="div-comment-27356" data-respondelement="respond" data-replyto="Reply to HoaiBacFX" aria-label='Reply to HoaiBacFX'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+	</ol><!-- .comment-list -->
+
+			<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
+		<h1 class="screen-reader-text">Comment navigation</h1>
+		<div class="nav-previous"><a href="https://k-ous.tk/about/comment-page-1/#comments" >&larr; Older Comments</a></div>
+		<div class="nav-next"></div>
+	</nav><!-- #comment-nav-below -->
+	
+		
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/about/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://k-ous.tk/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="cdd42d4d3a" /><input type="hidden" name="_wp_http_referer" value="/about/" />
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest" />
+
+<div class="comment-form-field comment-textarea">
+	<label for="comment">Enter your comment here...</label>
+	<div id="comment-form-comment"><textarea id="comment" name="comment" title="Enter your comment here..."></textarea></div>
+</div>
+
+<div id="comment-form-identity">
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="#comment-form-guest" id="postas-guest" class="nascar-signin-link"
+                   title="Login via Guest">
+									</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:WordPress.com" id="postas-wordpress" class="nascar-signin-link"
+                   title="Login via WordPress.com">
+					<svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24" ><rect x="0" fill="none" width="24" height="24"/><g><path fill="#0087be" d="M12.158 12.786l-2.698 7.84c.806.236 1.657.365 2.54.365 1.047 0 2.05-.18 2.986-.51-.024-.037-.046-.078-.065-.123l-2.762-7.57zM3.008 12c0 3.56 2.07 6.634 5.068 8.092L3.788 8.342c-.5 1.117-.78 2.354-.78 3.658zm15.06-.454c0-1.112-.398-1.88-.74-2.48-.456-.74-.883-1.368-.883-2.11 0-.825.627-1.595 1.51-1.595.04 0 .078.006.116.008-1.598-1.464-3.73-2.36-6.07-2.36-3.14 0-5.904 1.613-7.512 4.053.21.008.41.012.58.012.94 0 2.395-.114 2.395-.114.484-.028.54.684.057.74 0 0-.487.058-1.03.086l3.275 9.74 1.968-5.902-1.4-3.838c-.485-.028-.944-.085-.944-.085-.486-.03-.43-.77.056-.742 0 0 1.484.114 2.368.114.94 0 2.397-.114 2.397-.114.486-.028.543.684.058.74 0 0-.488.058-1.03.086l3.25 9.665.897-2.997c.456-1.17.684-2.137.684-2.907zm1.82-3.86c.04.286.06.593.06.924 0 .912-.17 1.938-.683 3.22l-2.746 7.94c2.672-1.558 4.47-4.454 4.47-7.77 0-1.564-.4-3.033-1.1-4.314zM12 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></g></svg>				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Twitter" id="postas-twitter" class="nascar-signin-link"
+                   title="Login via Twitter">
+					<svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24" ><rect x="0" fill="none" width="24" height="24"/><g><path fill="#1DA1F2" d="M22.23 5.924c-.736.326-1.527.547-2.357.646.847-.508 1.498-1.312 1.804-2.27-.793.47-1.67.812-2.606.996C18.325 4.498 17.258 4 16.078 4c-2.266 0-4.103 1.837-4.103 4.103 0 .322.036.635.106.935-3.41-.17-6.433-1.804-8.457-4.287-.353.607-.556 1.312-.556 2.064 0 1.424.724 2.68 1.825 3.415-.673-.022-1.305-.207-1.86-.514v.052c0 1.988 1.415 3.647 3.293 4.023-.344.095-.707.145-1.08.145-.265 0-.522-.026-.773-.074.522 1.63 2.038 2.817 3.833 2.85-1.404 1.1-3.174 1.757-5.096 1.757-.332 0-.66-.02-.98-.057 1.816 1.164 3.973 1.843 6.29 1.843 7.547 0 11.675-6.252 11.675-11.675 0-.178-.004-.355-.012-.53.802-.578 1.497-1.3 2.047-2.124z"/></g></svg>				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Facebook" id="postas-facebook" class="nascar-signin-link"
+                   title="Login via Facebook">
+					<svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24" ><rect x="0" fill="none" width="24" height="24"/><g><path fill="#3B5998" d="M20.007 3H3.993C3.445 3 3 3.445 3 3.993v16.013c0 .55.445.994.993.994h8.62v-6.97H10.27V11.31h2.346V9.31c0-2.325 1.42-3.59 3.494-3.59.993 0 1.847.073 2.096.106v2.43h-1.438c-1.128 0-1.346.537-1.346 1.324v1.734h2.69l-.35 2.717h-2.34V21h4.587c.548 0 .993-.445.993-.993V3.993c0-.548-.445-.993-.993-.993z"/></g></svg>				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25" alt="Gravatar" width="25" class="no-grav" />
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="url" value="" /></div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25" alt="WordPress.com Logo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="" />
+						<p class="comment-form-posting-as pa-wordpress">
+			<strong></strong>
+			You are commenting using your WordPress.com account.			<span class="comment-form-log-out">
+				(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'wordpress' );">Log&nbsp;Out</a>&nbsp;/&nbsp;
+				<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)
+			</span>
+			<span class="pa-icon"><svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24" ><rect x="0" fill="none" width="24" height="24"/><g><path fill="#0087be" d="M12.158 12.786l-2.698 7.84c.806.236 1.657.365 2.54.365 1.047 0 2.05-.18 2.986-.51-.024-.037-.046-.078-.065-.123l-2.762-7.57zM3.008 12c0 3.56 2.07 6.634 5.068 8.092L3.788 8.342c-.5 1.117-.78 2.354-.78 3.658zm15.06-.454c0-1.112-.398-1.88-.74-2.48-.456-.74-.883-1.368-.883-2.11 0-.825.627-1.595 1.51-1.595.04 0 .078.006.116.008-1.598-1.464-3.73-2.36-6.07-2.36-3.14 0-5.904 1.613-7.512 4.053.21.008.41.012.58.012.94 0 2.395-.114 2.395-.114.484-.028.54.684.057.74 0 0-.487.058-1.03.086l3.275 9.74 1.968-5.902-1.4-3.838c-.485-.028-.944-.085-.944-.085-.486-.03-.43-.77.056-.742 0 0 1.484.114 2.368.114.94 0 2.397-.114 2.397-.114.486-.028.543.684.058.74 0 0-.488.058-1.03.086l3.25 9.665.897-2.997c.456-1.17.684-2.137.684-2.907zm1.82-3.86c.04.286.06.593.06.924 0 .912-.17 1.938-.683 3.22l-2.746 7.94c2.672-1.558 4.47-4.454 4.47-7.77 0-1.564-.4-3.033-1.1-4.314zM12 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></g></svg></span>
+		</p>
+					</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25" alt="Google photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="" />
+						<p class="comment-form-posting-as pa-googleplus">
+			<strong></strong>
+			You are commenting using your Google account.			<span class="comment-form-log-out">
+				(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'googleplus' );">Log&nbsp;Out</a>&nbsp;/&nbsp;
+				<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)
+			</span>
+			<span class="pa-icon"><svg xmlns="http://www.w3.org/2000/svg" role="presentation" x="0px" y="0px" viewBox="0 0 60 60" ><path fill="#519bf7" d="M56.3,30c0,-1.6 -0.2,-3.4 -0.6,-5h-3.1H42.2H30v10.6h14.8C44,39.3 42,42 39.1,43.9l8.8,6.8C53,46 56.3,39 56.3,30z" /><path fill="#3db366" d="M30,57.5c6.7,0 13.1,-2.4 17.9,-6.8l-8.8,-6.8c-2.5,1.6 -5.6,2.4 -9.1,2.4c-7.2,0 -13.3,-4.7 -15.4,-11.2l-9.3,7.1C9.8,51.3 19.1,57.5 30,57.5z" /><path fill="#fdc600" d="M5.3,42.2l9.3,-7.1c-0.5,-1.6 -0.8,-3.3 -0.8,-5.1s0.3,-3.5 0.8,-5.1l-9.3,-7.1C3.5,21.5 2.5,25.6 2.5,30S3.5,38.5 5.3,42.2z" /><path fill="#f15b44" d="M40.1,17.4l8,-8C43.3,5.1 37,2.5 30,2.5C19.1,2.5 9.8,8.7 5.3,17.8l9.3,7.1c2.1,-6.5 8.2,-11.1 15.4,-11.1C33.9,13.7 37.4,15.1 40.1,17.4z" /></svg></span>
+		</p>
+					</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25" alt="Twitter picture" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="" />
+						<p class="comment-form-posting-as pa-twitter">
+			<strong></strong>
+			You are commenting using your Twitter account.			<span class="comment-form-log-out">
+				(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'twitter' );">Log&nbsp;Out</a>&nbsp;/&nbsp;
+				<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)
+			</span>
+			<span class="pa-icon"><svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24" ><rect x="0" fill="none" width="24" height="24"/><g><path fill="#1DA1F2" d="M22.23 5.924c-.736.326-1.527.547-2.357.646.847-.508 1.498-1.312 1.804-2.27-.793.47-1.67.812-2.606.996C18.325 4.498 17.258 4 16.078 4c-2.266 0-4.103 1.837-4.103 4.103 0 .322.036.635.106.935-3.41-.17-6.433-1.804-8.457-4.287-.353.607-.556 1.312-.556 2.064 0 1.424.724 2.68 1.825 3.415-.673-.022-1.305-.207-1.86-.514v.052c0 1.988 1.415 3.647 3.293 4.023-.344.095-.707.145-1.08.145-.265 0-.522-.026-.773-.074.522 1.63 2.038 2.817 3.833 2.85-1.404 1.1-3.174 1.757-5.096 1.757-.332 0-.66-.02-.98-.057 1.816 1.164 3.973 1.843 6.29 1.843 7.547 0 11.675-6.252 11.675-11.675 0-.178-.004-.355-.012-.53.802-.578 1.497-1.3 2.047-2.124z"/></g></svg></span>
+		</p>
+					</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="" alt="Facebook photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="" />
+						<p class="comment-form-posting-as pa-facebook">
+			<strong></strong>
+			You are commenting using your Facebook account.			<span class="comment-form-log-out">
+				(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'facebook' );">Log&nbsp;Out</a>&nbsp;/&nbsp;
+				<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)
+			</span>
+			<span class="pa-icon"><svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24" ><rect x="0" fill="none" width="24" height="24"/><g><path fill="#3B5998" d="M20.007 3H3.993C3.445 3 3 3.445 3 3.993v16.013c0 .55.445.994.993.994h8.62v-6.97H10.27V11.31h2.346V9.31c0-2.325 1.42-3.59 3.494-3.59.993 0 1.847.073 2.096.106v2.43h-1.438c-1.128 0-1.346.537-1.346 1.324v1.734h2.69l-.35 2.717h-2.34V21h4.587c.548 0 .993-.445.993-.993V3.993c0-.548-.445-.993-.993-.993z"/></g></svg></span>
+		</p>
+					</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function () {
+
+	function hide( sel ) {
+		var el = document.querySelector( sel );
+		if ( el ) {
+			el.style.setProperty( 'display', 'none' );
+		}
+	}
+
+	function show( sel ) {
+		var el = document.querySelector( sel );
+		if ( el ) {
+			el.style.removeProperty( 'display' );
+		}
+	}
+
+	var input = document.createElement( 'input' );
+	var comment = document.querySelector( '#comment' );
+
+	if ( input && comment && 'placeholder' in input ) {
+		var label = document.querySelector( '.comment-textarea label' );
+		if ( label ) {
+			var text = label.textContent;
+			label.parentNode.removeChild( label );
+			comment.setAttribute( 'placeholder', text );
+		}
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	hide( '#comment-form-identity' );
+	hide( '#comment-form-subscribe' );
+	hide( '#commentform .form-submit' );
+
+	if ( comment ) {
+		comment.style.height = '10px';
+
+		var handler = function () {
+			comment.style.height = HighlanderComments.initialHeight + 'px';
+			show( '#comment-form-identity' );
+			show( '#comment-form-subscribe' );
+			show( '#commentform .form-submit' );
+			HighlanderComments.resizeCallback();
+
+			comment.removeEventListener( 'focus', handler );
+		};
+
+		comment.addEventListener( 'focus', handler );
+	}
+}
+
+if ( document.readyState !== 'loading' ) {
+	highlander_expando_javascript();
+} else {
+	if ( typeof window.jQuery === 'function' ) {
+		// Use jQuery's `ready` if available.
+		// This solves some scheduling issues between this script and the main highlander script.
+		jQuery( document ).ready( highlander_expando_javascript );
+	} else {
+		// If not available, add a vanilla event listener.
+		document.addEventListener( 'DOMContentLoaded', highlander_expando_javascript );
+	}
+}
+
+</script>
+
+<div id="comment-form-subscribe">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;"/> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of new comments via email.</label></p><p class="post-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto;"/> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog"  style="display: inline;">Notify me of new posts via email.</label></p></div>
+
+
+
+
+<p class="form-submit wp-block-button"><input name="submit" type="submit" id="comment-submit" class="submit wp-block-button__link" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='1' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="d859679d0b" /></p>
+<input type="hidden" name="genseq" value="1629647989" />
+<input type="hidden" id="ak_js" name="ak_js" value="180"/><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea></form>	</div><!-- #respond -->
+	<div style="clear: both"></div>
+</div><!-- #comments -->
+
+		</div><!-- #content -->
+	</div><!-- #primary -->
+	<div id="content-sidebar" class="content-sidebar widget-area" role="complementary">
+	<aside id="search-5" class="widget widget_search"><form role="search" method="get" class="search-form" action="https://k-ous.tk/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></aside><aside id="custom_html-9" class="widget_text widget widget_custom_html"><h1 class="widget-title">Kênh Youtube K-ous Nguyễn</h1><div class="textwidget custom-html-widget"><!-- FB Pixel tracking -->
+<img alt="pixel" height="1" width="1" style="display:none;" src="https://www.facebook.com/tr?id=598240393698367&amp;ev=PageView&amp;noscript=1" />
+<div style="text-align:center;margin-bottom:-32px;margin-top:-12px;">
+	<a href="https://www.youtube.com/c/toidicodedaoblog?sub_confirmation=1" target="_blank" style="display:block;width:95%;margin:-6px auto 14px;" rel="noopener"><img src="https://toidicodedao.files.wordpress.com/2017/12/youtube-channel-toidicodedao.jpg" alt="youtube-channel-toidicodedao" /></a>
+	Kênh Youtube chia sẻ về ngành lập trình dưới dạng <strong>vlog 3-4 phút</strong> rất ngắn gọn và bổ ích.
+
+	Các bạn nhớ <a href="https://www.youtube.com/c/toidicodedaoblog?sub_confirmation=1" target="_blank" rel="noopener"><strong>ghé thăm và subscribe</strong></a> nha!	
+	
+	
+</div></div></aside><aside id="custom_html-3" class="widget_text widget widget_custom_html"><h1 class="widget-title">Sách do tôi viết</h1><div class="textwidget custom-html-widget"><p style="height:170px;margin-top:-10px;"><a href="http://security.k-ous.tk?utm_source=blog_sidebar" target="_blank" rel="noopener"><img style="width:36%;float:left;" src="https://toidicodedao.files.wordpress.com/2016/12/3dbook.png" /><span style="margin-top:3.2em;font-size:1.1em;margin-left:.5em;display:block;float:left;width:55%;"><b>[Free Ebooks]</b> Bảo mật nhập môn - Bảo mật cơ bản cho developer</span> </a></p>
+<p style="height:170px;margin-top:0;margin-bottom:10px;"><a href="http://hoclaptrinh.k-ous.tk?utm_source=blog_sidebar" target="_blank" rel="noopener"><img style="width:40%;float:left;" src="https://toidicodedao.files.wordpress.com/2017/08/cover1.png" /><span style="margin-top:3.2em;font-size:1.1em;margin-left:.5em;display:block;float:left;width:55%;"><b>[Free Ebooks]</b> Nhập môn lập trình không code</span> </a></p>
+<p style="height:120px;"><a href="http://book.k-ous.tk?utm_source=blog_sidebar" target="_blank" rel="noopener"><img style="width:36%;float:left;" src="https://lh4.googleusercontent.com/XpLc2VqxYIAqmplMveYAW20LMdAv_uSmLfVvBuqtumiQCG1nOn65TVMyPgEKALH2gN6n2sG5gQ=w414" /><span style="margin-top:2.8em;font-size:1.1em;display:block;margin-left:.5em;float:left;width:55%;"><b>[Sách giấy]</b> Code dạo ký sự - Lập trình viên đâu phải chỉ biết code</span> </a></p>
+</div></aside><aside id="top-posts-3" class="widget widget_top-posts"><h1 class="widget-title">Top Posts &amp; Pages</h1><ul class='widgets-list-layout no-grav'>
+					<li>
+						<a href="https://k-ous.tk/2020/07/28/huong-dan-setup-visual-studio-code-nhung-extension-xin-xo-ma-dev-nao-cung-nen-dung/" title="Hướng dẫn setup Visual Studio Code - Những extension xịn xò mà dev nào cũng nên dùng" class="bump-view" data-bump-view="tp">
+								<img width="40" height="40" src="https://toidicodedao.files.wordpress.com/2020/07/a4nibn44fsehd.jpg?w=1200&#038;resize=40%2C40" alt="Hướng dẫn setup Visual Studio Code - Những extension xịn xò mà dev nào cũng nên dùng" data-pin-nopin="true" class="widgets-list-layout-blavatar"/>
+							</a>
+							<div class="widgets-list-layout-links">
+								<a href="https://k-ous.tk/2020/07/28/huong-dan-setup-visual-studio-code-nhung-extension-xin-xo-ma-dev-nao-cung-nen-dung/" title="Hướng dẫn setup Visual Studio Code - Những extension xịn xò mà dev nào cũng nên dùng" class="bump-view" data-bump-view="tp">Hướng dẫn setup Visual Studio Code - Những extension xịn xò mà dev nào cũng nên dùng</a>
+							</div>
+													</li>
+										<li>
+						<a href="https://k-ous.tk/dam-ba-cach-hack-sap-1-website-nao-do.html" title="Dăm ba cách hack sập 1 website nào đó - Phần 1" class="bump-view" data-bump-view="tp">
+								<img width="40" height="40" src="./imgs/hackweb1.gif" alt="Dăm ba cách hack sập 1 website nào đó - Phần 1" data-pin-nopin="true" class="widgets-list-layout-blavatar"/>
+							</a>
+							<div class="widgets-list-layout-links">
+								<a href="https://k-ous.tk/dam-ba-cach-hack-sap-1-website-nao-do.html" title="Dăm ba cách hack sập 1 website nào đó - Phần 1" class="bump-view" data-bump-view="tp">Dăm ba cách hack sập 1 website nào đó - Phần 1</a>
+							</div>
+													</li>
+										<li>
+						<a href="https://k-ous.tk/lam-bot-facebook.html" title="Dăm ba cách làm mấy con bot" class="bump-view" data-bump-view="tp">
+								<img width="40" height="40" src="./imgs/lambot.gif" alt="Dăm ba cách làm mấy con bot" data-pin-nopin="true" class="widgets-list-layout-blavatar"/>
+							</a>
+							<div class="widgets-list-layout-links">
+								<a href="https://k-ous.tk/lam-bot-facebook.html" title="Dăm ba cách làm mấy con bot" class="bump-view" data-bump-view="tp">Dăm ba cách làm mấy con bot</a>
+							</div>
+													</li>
+										<li>
+						<a href="https://k-ous.tk/2020/04/21/5-trang-web-cuc-hay-de-luyen-thuat-toan-hoc-lap-trinh/" title="5 trang web cực hay để luyện thuật toán, học lập trình" class="bump-view" data-bump-view="tp">
+								<img width="40" height="40" src="https://toidicodedao.files.wordpress.com/2020/03/code-11.jpg?w=1200&#038;resize=40%2C40" alt="5 trang web cực hay để luyện thuật toán, học lập trình" data-pin-nopin="true" class="widgets-list-layout-blavatar"/>
+							</a>
+							<div class="widgets-list-layout-links">
+								<a href="https://k-ous.tk/2020/04/21/5-trang-web-cuc-hay-de-luyen-thuat-toan-hoc-lap-trinh/" title="5 trang web cực hay để luyện thuật toán, học lập trình" class="bump-view" data-bump-view="tp">5 trang web cực hay để luyện thuật toán, học lập trình</a>
+							</div>
+													</li>
+										<li>
+						<a href="https://k-ous.tk/2015/11/03/dependency-injection-va-inversion-of-control-phan-1-dinh-nghia/" title="Dependency Injection và Inversion of Control - Phần 1: Định nghĩa" class="bump-view" data-bump-view="tp">
+								<img width="40" height="40" src="https://toidicodedao.files.wordpress.com/2015/09/ioc-and-mapper-in-c-1-638.jpg?resize=40%2C40" alt="Dependency Injection và Inversion of Control - Phần 1: Định nghĩa" data-pin-nopin="true" class="widgets-list-layout-blavatar"/>
+							</a>
+							<div class="widgets-list-layout-links">
+								<a href="https://k-ous.tk/2015/11/03/dependency-injection-va-inversion-of-control-phan-1-dinh-nghia/" title="Dependency Injection và Inversion of Control - Phần 1: Định nghĩa" class="bump-view" data-bump-view="tp">Dependency Injection và Inversion of Control - Phần 1: Định nghĩa</a>
+							</div>
+													</li>
+										<li>
+						<a href="https://k-ous.tk/trien-vong-cua-nghe-lap-trinh.html" title="Triển vọng của nghề lập trình ? Ra trường thì làm gì ?" class="bump-view" data-bump-view="tp">
+								<img width="40" height="40" src="./imgs/trienvong.jpg" alt="Triển vọng của nghề lập trình ? Ra trường thì làm gì ?" data-pin-nopin="true" class="widgets-list-layout-blavatar"/>
+							</a>
+							<div class="widgets-list-layout-links">
+								<a href="https://k-ous.tk/trien-vong-cua-nghe-lap-trinh.html title="Triển vọng của nghề lập trình ? Ra trường thì làm gì ?" class="bump-view" data-bump-view="tp">Triển vọng của nghề lập trình ? Ra trường thì làm gì ?</a>
+							</div>
+													</li>
+										<li>
+						<a href="https://k-ous.tk/2018/09/04/project-luyen-tap-ki-nang-lap-trinh/" title="9 project nhỏ mà bạn có thể code để luyện tập kĩ năng lập trình" class="bump-view" data-bump-view="tp">
+								<img width="40" height="40" src="https://toidicodedao.files.wordpress.com/2018/08/javascript-project-1.jpg?resize=40%2C40" alt="9 project nhỏ mà bạn có thể code để luyện tập kĩ năng lập trình" data-pin-nopin="true" class="widgets-list-layout-blavatar"/>
+							</a>
+							<div class="widgets-list-layout-links">
+								<a href="https://k-ous.tk/2018/09/04/project-luyen-tap-ki-nang-lap-trinh/" title="9 project nhỏ mà bạn có thể code để luyện tập kĩ năng lập trình" class="bump-view" data-bump-view="tp">9 project nhỏ mà bạn có thể code để luyện tập kĩ năng lập trình</a>
+							</div>
+													</li>
+										<li>
+						<a href="https://k-ous.tk/2016/05/26/tong-hop-nhung-seriesbai-viet-hay-nhat-tren-blog/" title="Tổng hợp những series/bài viết hay nhất trên blog" class="bump-view" data-bump-view="tp">
+								<img width="40" height="40" src="https://toidicodedao.files.wordpress.com/2016/05/12230712-best-of-the-best-rubber-stamp-stock-vector-winner.jpg?w=1200&#038;resize=40%2C40" alt="Tổng hợp những series/bài viết hay nhất trên blog" data-pin-nopin="true" class="widgets-list-layout-blavatar"/>
+							</a>
+							<div class="widgets-list-layout-links">
+								<a href="https://k-ous.tk/2016/05/26/tong-hop-nhung-seriesbai-viet-hay-nhat-tren-blog/" title="Tổng hợp những series/bài viết hay nhất trên blog" class="bump-view" data-bump-view="tp">Tổng hợp những series/bài viết hay nhất trên blog</a>
+							</div>
+													</li>
+										<li>
+						<a href="https://k-ous.tk/about/" title="About me" class="bump-view" data-bump-view="tp" aria-current="page">
+								<img width="40" height="40" src="./imgs/theme.jpg?resize=40%2C40" alt="About me" data-pin-nopin="true" class="widgets-list-layout-blavatar"/>
+							</a>
+							<div class="widgets-list-layout-links">
+								<a href="https://k-ous.tk/about/" title="About me" class="bump-view" data-bump-view="tp" aria-current="page">About me</a>
+							</div>
+													</li>
+										<li>
+						<a href="https://k-ous.tk/2017/10/17/lua-chon-laptop-lap-trinh-nguoi-ban-dong-hanh-cua-moi-lap-trinh-vien/" title="Lựa chọn laptop lập trình - Người bạn đồng hành của mọi lập trình viên" class="bump-view" data-bump-view="tp">
+								<img width="40" height="40" src="https://toidicodedao.files.wordpress.com/2017/09/lap.jpg?resize=40%2C40" alt="Lựa chọn laptop lập trình - Người bạn đồng hành của mọi lập trình viên" data-pin-nopin="true" class="widgets-list-layout-blavatar"/>
+							</a>
+							<div class="widgets-list-layout-links">
+								<a href="https://k-ous.tk/2017/10/17/lua-chon-laptop-lap-trinh-nguoi-ban-dong-hanh-cua-moi-lap-trinh-vien/" title="Lựa chọn laptop lập trình - Người bạn đồng hành của mọi lập trình viên" class="bump-view" data-bump-view="tp">Lựa chọn laptop lập trình - Người bạn đồng hành của mọi lập trình viên</a>
+							</div>
+													</li>
+					</ul>
+</aside><aside id="facebook-likebox-3" class="widget widget_facebook_likebox"><h1 class="widget-title"><a href="https://www.facebook.com/toidicodedao/">Like ngay để không bỏ lỡ những bài viết hay nhé!</a></h1>		<div id="fb-root"></div>
+		<div class="fb-page" data-href="https://www.facebook.com/toidicodedao/" data-width="500"  data-height="350" data-hide-cover="false" data-show-facepile="true" data-tabs="timeline" data-hide-cta="false" data-small-header="false">
+		<div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/toidicodedao/"><a href="https://www.facebook.com/toidicodedao/">Like ngay để không bỏ lỡ những bài viết hay nhé!</a></blockquote></div>
+		</div>
+		</aside>
+		<aside id="recent-posts-5" class="widget widget_recent_entries">
+		<h1 class="widget-title">Bài viết gần nhất</h1><nav role="navigation" aria-label="Bài viết gần nhất">
+		<ul>
+											<li>
+					<a href="https://k-ous.tk/trien-vong-cua-nghe-lap-trinh.html">Review nhẹ các ngôn ngữ, công nghệ, framework mà mình đã và đang dùng kiếm cơm &#8211; Phần cuối</a>
+									</li>
+											<li>
+					<a href="https://k-ous.tk/cach-thiet-lap-1-trang-zphisher">cách tạo ra một trang phishing , zphisher</a>
+									</li>
+											<li>
+					<a href="https://k-ous.tk/hoc-it-thi-tan-gai-nhu-nao-cho-ngau.html">Học It thì tán gái thế nào cho ngầu &#8211; Phần 1</a>
+									</li>
+											<li>
+					<a href="https://k-ous.tk/ban-muon-lam-web-thi-hoc-ngon-ngu-nao-dau-tien.html">Bạn muốn làm web thì học ngôn ngữ nào đầu tiên</a>
+									</li>
+											<li>
+					<a href="https://k-ous.tk/dam-ba-cach-hack-sap-1-website-nao-do-p2.html">Dăm ba cách hack sập 1 website nào đó &#8211; Phần 2</a>
+									</li>
+											<li>
+					<a href="https://k-ous.tk/dam-ba-cach-hack-sap-1-website-nao-do.html">Dăm ba cách hack sập 1 website nào đó &#8211; Phần 1</a>
+									</li>
+					</ul>
+
+		</nav></aside><aside id="text-20" class="widget widget_text"><h1 class="widget-title">About me</h1>			<div class="textwidget"><img style="margin-bottom:15px;" width="150px" src="https://toidicodedao.files.wordpress.com/2016/08/av.jpg" />
+<div style="text-align:justify;">
+<p>Mình là Nguyễn Văn Trường, một coder trẻ trâu.</p> 
+<p>Thuở còn là sinh viên, mình từng có những thắc mắc, trăn trở về technical, về con đường nghề nghiệp, nhưng không có ai giải đáp.</p>
+<p>
+Blog này là nơi mình chia sẻ những kiến thức, kinh nghiệm mà mình đạt được trong quá trình làm việc và trải nghiệm. </p>
+Mong rằng nó sẽ giải đáp phần nào những khúc mắc, trăn trở cho những bạn sinh viên như mình ngày xưa.</p>
+<p style="margin-bottom:-30px;"><a href="https://k-ous.tk/about/">Đọc thêm về tôi và blog này!</a></p></div>
+</div>
+		</aside><aside id="wp_tag_cloud-7" class="widget wp_widget_tag_cloud"><h1 class="widget-title">Tags</h1><div style="overflow:hidden"><ul class='wp-tag-cloud' role='list'>
+	<li><a href="https://k-ous.tk/tag/algorithm/" class="tag-cloud-link tag-link-18127 tag-link-position-1" style="font-size: 8pt;" aria-label="algorithm (21 items)">algorithm</a></li>
+	<li><a href="https://k-ous.tk/tag/azure/" class="tag-cloud-link tag-link-335778 tag-link-position-2" style="font-size: 8.2616822429907pt;" aria-label="azure (22 items)">azure</a></li>
+	<li><a href="https://k-ous.tk/tag/blog/" class="tag-cloud-link tag-link-273 tag-link-position-3" style="font-size: 9.8317757009346pt;" aria-label="blog (29 items)">blog</a></li>
+	<li><a href="https://k-ous.tk/tag/c/" class="tag-cloud-link tag-link-2426 tag-link-position-4" style="font-size: 13.233644859813pt;" aria-label="c# (54 items)">c#</a></li>
+	<li><a href="https://k-ous.tk/tag/c-net/" class="tag-cloud-link tag-link-49277 tag-link-position-5" style="font-size: 9.5700934579439pt;" aria-label="c#.net (28 items)">c#.net</a></li>
+	<li><a href="https://k-ous.tk/tag/c-hay-ho/" class="tag-cloud-link tag-link-319006524 tag-link-position-6" style="font-size: 8.9158878504673pt;" aria-label="c# hay ho (25 items)">c# hay ho</a></li>
+	<li><a href="https://k-ous.tk/tag/code/" class="tag-cloud-link tag-link-656 tag-link-position-7" style="font-size: 18.336448598131pt;" aria-label="code (133 items)">code</a></li>
+	<li><a href="https://k-ous.tk/tag/coder/" class="tag-cloud-link tag-link-10095 tag-link-position-8" style="font-size: 9.4392523364486pt;" aria-label="coder (27 items)">coder</a></li>
+	<li><a href="https://k-ous.tk/tag/coding/" class="tag-cloud-link tag-link-332 tag-link-position-9" style="font-size: 10.355140186916pt;" aria-label="coding (32 items)">coding</a></li>
+	<li><a href="https://k-ous.tk/tag/cv/" class="tag-cloud-link tag-link-10923 tag-link-position-10" style="font-size: 8.785046728972pt;" aria-label="cv (24 items)">cv</a></li>
+	<li><a href="https://k-ous.tk/tag/cong-nghe/" class="tag-cloud-link tag-link-109747 tag-link-position-11" style="font-size: 12.971962616822pt;" aria-label="công nghệ (51 items)">công nghệ</a></li>
+	<li><a href="https://k-ous.tk/tag/database/" class="tag-cloud-link tag-link-475 tag-link-position-12" style="font-size: 8pt;" aria-label="database (21 items)">database</a></li>
+	<li><a href="https://k-ous.tk/tag/developer/" class="tag-cloud-link tag-link-14911 tag-link-position-13" style="font-size: 21.214953271028pt;" aria-label="developer (222 items)">developer</a></li>
+	<li><a href="https://k-ous.tk/tag/du-an/" class="tag-cloud-link tag-link-12100 tag-link-position-14" style="font-size: 8.2616822429907pt;" aria-label="dự án (22 items)">dự án</a></li>
+	<li><a href="https://k-ous.tk/tag/facebook/" class="tag-cloud-link tag-link-81819 tag-link-position-15" style="font-size: 10.224299065421pt;" aria-label="facebook (31 items)">facebook</a></li>
+	<li><a href="https://k-ous.tk/tag/framework/" class="tag-cloud-link tag-link-7136 tag-link-position-16" style="font-size: 10.616822429907pt;" aria-label="framework (34 items)">framework</a></li>
+	<li><a href="https://k-ous.tk/tag/front-end/" class="tag-cloud-link tag-link-278857 tag-link-position-17" style="font-size: 11.794392523364pt;" aria-label="front-end (42 items)">front-end</a></li>
+	<li><a href="https://k-ous.tk/tag/front-end-developer/" class="tag-cloud-link tag-link-18478355 tag-link-position-18" style="font-size: 8.785046728972pt;" aria-label="front-end developer (24 items)">front-end developer</a></li>
+	<li><a href="https://k-ous.tk/tag/hoc-lap-trinh/" class="tag-cloud-link tag-link-67502629 tag-link-position-19" style="font-size: 8.2616822429907pt;" aria-label="học lập trình (22 items)">học lập trình</a></li>
+	<li><a href="https://k-ous.tk/tag/java/" class="tag-cloud-link tag-link-1017 tag-link-position-20" style="font-size: 10.485981308411pt;" aria-label="java (33 items)">java</a></li>
+	<li><a href="https://k-ous.tk/tag/javascript/" class="tag-cloud-link tag-link-457 tag-link-position-21" style="font-size: 15.327102803738pt;" aria-label="javascript (78 items)">javascript</a></li>
+	<li><a href="https://k-ous.tk/tag/js/" class="tag-cloud-link tag-link-21291 tag-link-position-22" style="font-size: 11.92523364486pt;" aria-label="js (43 items)">js</a></li>
+	<li><a href="https://k-ous.tk/tag/junior/" class="tag-cloud-link tag-link-6584 tag-link-position-23" style="font-size: 8pt;" aria-label="junior (21 items)">junior</a></li>
+	<li><a href="https://k-ous.tk/tag/kinh-nghiem/" class="tag-cloud-link tag-link-191470 tag-link-position-24" style="font-size: 19.383177570093pt;" aria-label="kinh nghiệm (160 items)">kinh nghiệm</a></li>
+	<li><a href="https://k-ous.tk/tag/lightning-talk/" class="tag-cloud-link tag-link-3825791 tag-link-position-25" style="font-size: 9.4392523364486pt;" aria-label="lightning talk (27 items)">lightning talk</a></li>
+	<li><a href="https://k-ous.tk/tag/lap-trinh/" class="tag-cloud-link tag-link-405083 tag-link-position-26" style="font-size: 22pt;" aria-label="lập trình (256 items)">lập trình</a></li>
+	<li><a href="https://k-ous.tk/tag/lap-trinh-vien/" class="tag-cloud-link tag-link-11782263 tag-link-position-27" style="font-size: 18.728971962617pt;" aria-label="lập trình viên (142 items)">lập trình viên</a></li>
+	<li><a href="https://k-ous.tk/tag/lap-trinh-web/" class="tag-cloud-link tag-link-12309459 tag-link-position-28" style="font-size: 8.785046728972pt;" aria-label="lập trình web (24 items)">lập trình web</a></li>
+	<li><a href="https://k-ous.tk/tag/microsoft/" class="tag-cloud-link tag-link-637 tag-link-position-29" style="font-size: 9.8317757009346pt;" aria-label="microsoft (29 items)">microsoft</a></li>
+	<li><a href="https://k-ous.tk/tag/nodejs/" class="tag-cloud-link tag-link-31896918 tag-link-position-30" style="font-size: 10.616822429907pt;" aria-label="Nodejs (34 items)">Nodejs</a></li>
+	<li><a href="https://k-ous.tk/tag/phong-van/" class="tag-cloud-link tag-link-3001212 tag-link-position-31" style="font-size: 11.401869158879pt;" aria-label="phỏng vấn (39 items)">phỏng vấn</a></li>
+	<li><a href="https://k-ous.tk/tag/program/" class="tag-cloud-link tag-link-9574 tag-link-position-32" style="font-size: 11.663551401869pt;" aria-label="program (41 items)">program</a></li>
+	<li><a href="https://k-ous.tk/tag/programmer/" class="tag-cloud-link tag-link-37549 tag-link-position-33" style="font-size: 14.018691588785pt;" aria-label="programmer (62 items)">programmer</a></li>
+	<li><a href="https://k-ous.tk/tag/programming/" class="tag-cloud-link tag-link-196 tag-link-position-34" style="font-size: 18.205607476636pt;" aria-label="programming (130 items)">programming</a></li>
+	<li><a href="https://k-ous.tk/tag/review/" class="tag-cloud-link tag-link-1745 tag-link-position-35" style="font-size: 9.4392523364486pt;" aria-label="review (27 items)">review</a></li>
+	<li><a href="https://k-ous.tk/tag/review-sach/" class="tag-cloud-link tag-link-21456865 tag-link-position-36" style="font-size: 10.355140186916pt;" aria-label="review sách (32 items)">review sách</a></li>
+	<li><a href="https://k-ous.tk/tag/senior/" class="tag-cloud-link tag-link-6585 tag-link-position-37" style="font-size: 10.485981308411pt;" aria-label="senior (33 items)">senior</a></li>
+	<li><a href="https://k-ous.tk/tag/senior-developer/" class="tag-cloud-link tag-link-111972 tag-link-position-38" style="font-size: 11.532710280374pt;" aria-label="senior developer (40 items)">senior developer</a></li>
+	<li><a href="https://k-ous.tk/tag/series/" class="tag-cloud-link tag-link-2347 tag-link-position-39" style="font-size: 13.88785046729pt;" aria-label="series (61 items)">series</a></li>
+	<li><a href="https://k-ous.tk/tag/sinh-vien/" class="tag-cloud-link tag-link-1282321 tag-link-position-40" style="font-size: 11.92523364486pt;" aria-label="sinh viên (43 items)">sinh viên</a></li>
+	<li><a href="https://k-ous.tk/tag/stackoverflow/" class="tag-cloud-link tag-link-6553131 tag-link-position-41" style="font-size: 8pt;" aria-label="stackoverflow (21 items)">stackoverflow</a></li>
+	<li><a href="https://k-ous.tk/tag/sach/" class="tag-cloud-link tag-link-60746 tag-link-position-42" style="font-size: 10.878504672897pt;" aria-label="sách (35 items)">sách</a></li>
+	<li><a href="https://k-ous.tk/tag/technical/" class="tag-cloud-link tag-link-624 tag-link-position-43" style="font-size: 9.1775700934579pt;" aria-label="technical (26 items)">technical</a></li>
+	<li><a href="https://k-ous.tk/tag/thuat-toan/" class="tag-cloud-link tag-link-11346262 tag-link-position-44" style="font-size: 8.5233644859813pt;" aria-label="thuật toán (23 items)">thuật toán</a></li>
+	<li><a href="https://k-ous.tk/tag/toi-di-code-dao/" class="tag-cloud-link tag-link-415559376 tag-link-position-45" style="font-size: 8.785046728972pt;" aria-label="K-ous Nguyễn (24 items)">K-ous Nguyễn</a></li>
+	<li><a href="https://k-ous.tk/tag/tu-hoc/" class="tag-cloud-link tag-link-37805049 tag-link-position-46" style="font-size: 8.785046728972pt;" aria-label="tự học (24 items)">tự học</a></li>
+	<li><a href="https://k-ous.tk/tag/web/" class="tag-cloud-link tag-link-151 tag-link-position-47" style="font-size: 11.532710280374pt;" aria-label="web (40 items)">web</a></li>
+	<li><a href="https://k-ous.tk/tag/youtube-channel/" class="tag-cloud-link tag-link-1079725 tag-link-position-48" style="font-size: 10.878504672897pt;" aria-label="youtube channel (35 items)">youtube channel</a></li>
+	<li><a href="https://k-ous.tk/tag/dai-hoc/" class="tag-cloud-link tag-link-11213773 tag-link-position-49" style="font-size: 12.056074766355pt;" aria-label="đại học (44 items)">đại học</a></li>
+	<li><a href="https://k-ous.tk/tag/doc-sach/" class="tag-cloud-link tag-link-4108939 tag-link-position-50" style="font-size: 8pt;" aria-label="đọc sách (21 items)">đọc sách</a></li>
+</ul>
+</div></aside><aside id="custom_html-7" class="widget_text widget widget_custom_html"><h1 class="widget-title">Bản quyền bài viết</h1><div class="textwidget custom-html-widget">Mọi việc chia sẻ, trích dẫn từ bài viết của blog đều phải tuân theo các quy định sau:
+<ul>
+<li>Trích dẫn rõ nguồn</li>
+<li>Không sử dụng vào mục đích thương mại</li>
+<li>Không được sửa đổi hay làm thay đổi nội dung bài viết</li>
+</ul>
+
+<br />
+© 2015-2019 K-ous Nguyễn <br />
+<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" alt="Creative Commons License"></a><br />
+
+</div></aside></div><!-- #content-sidebar -->
+</div><!-- #main-content -->
+
+<div id="secondary">
+			<h2 class="site-description">Lập trình viên giỏi không phải chỉ biết code</h2>
+	
+	
+		<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<aside id="text-18" class="widget widget_text">			<div class="textwidget"><a target="_blank" href="https://k-ous.tk/?random" rel="noopener"><img src="https://toidicodedao.files.wordpress.com/2016/05/button-3.png" />
+</a></div>
+		</aside><aside id="nav_menu-7" class="widget widget_nav_menu"><h1 class="widget-title">Social Links</h1><nav class="menu-social-link-menu-container" aria-label="Social Links"><ul id="menu-social-link-menu" class="menu"><li id="menu-item-796" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-796"><a href="http://conanak99.github.io/">Personal Page</a></li>
+<li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38"><a href="http://playerdou.com/kous1608">PlayerDou</a></li>
+<li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36"><a href="https://github.com/nguyenvantruong0905">Github</a></li>
+
+<li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35"><a title="Facebook" href="https://www.facebook.com/KousNguyen">Facebook (Personal Page)</a></li>
+</ul></nav></aside><aside id="text-15" class="widget widget_text"><h1 class="widget-title">Online users</h1>			<div class="textwidget"><a target="_blank" href="http://whos.amung.us/stats/1ahu94645vpr/" rel="noopener">
+    <img src="https://whos.amung.us/cwidget/1ahu94645vpr/ffffff030001.png" width="81" height="29" border="0" title="Click to see how many people are online" />
+</a></div>
+		</aside><aside id="blog-stats-5" class="widget widget_blog-stats"><h1 class="widget-title">Blog Stats</h1>		<ul>
+			<li>11,066,629 lượt xem</li>
+		</ul>
+		</aside><aside id="text-13" class="widget widget_text"><h1 class="widget-title">Liên kết</h1>			<div class="textwidget"><p><a href="https://codeaholicguy.com/">Codeaholicguy</a><br />
+<a href="https://thefullsnack.com">The Full Snack Developer</a><br />
+<a href="http://kysubrse.com/">Tiger Nguyễn &#8211; BrSE blog</a></p>
+<p><a href="https://yellowcodebooks.com/">Yellow Code</a><a href="http://niviki.com/"><br />
+Niviki.com</a><br />
+<a href="https://cuongquach.com/">Blog Cường Quách</a><br />
+<a href="http://www.dammio.com/">Dammio &#8211; Kiến thức CN</a><br />
+<a href="https://jaredchu.com/">The Lazy Dev</a></p>
+</div>
+		</aside><aside id="archives-8" class="widget widget_archive"><h1 class="widget-title">Lưu trữ</h1><nav role="navigation" aria-label="Lưu trữ">
+			<ul>
+					<li><a href='https://k-ous.tk/2021/04/'>April 2021</a>&nbsp;(1)</li>
+	<li><a href='https://k-ous.tk/2021/03/'>March 2021</a>&nbsp;(4)</li>
+	<li><a href='https://k-ous.tk/2021/02/'>February 2021</a>&nbsp;(2)</li>
+	<li><a href='https://k-ous.tk/2021/01/'>January 2021</a>&nbsp;(4)</li>
+	<li><a href='https://k-ous.tk/2020/12/'>December 2020</a>&nbsp;(5)</li>
+	<li><a href='https://k-ous.tk/2020/11/'>November 2020</a>&nbsp;(4)</li>
+	<li><a href='https://k-ous.tk/2020/10/'>October 2020</a>&nbsp;(4)</li>
+	<li><a href='https://k-ous.tk/2020/09/'>September 2020</a>&nbsp;(5)</li>
+	<li><a href='https://k-ous.tk/2020/08/'>August 2020</a>&nbsp;(4)</li>
+	<li><a href='https://k-ous.tk/2020/07/'>July 2020</a>&nbsp;(4)</li>
+	<li><a href='https://k-ous.tk/2020/06/'>June 2020</a>&nbsp;(6)</li>
+	<li><a href='https://k-ous.tk/2020/05/'>May 2020</a>&nbsp;(4)</li>
+	<li><a href='https://k-ous.tk/2020/04/'>April 2020</a>&nbsp;(4)</li>
+	<li><a href='https://k-ous.tk/2020/03/'>March 2020</a>&nbsp;(5)</li>
+	<li><a href='https://k-ous.tk/2020/02/'>February 2020</a>&nbsp;(4)</li>
+	<li><a href='https://k-ous.tk/2020/01/'>January 2020</a>&nbsp;(2)</li>
+	<li><a href='https://k-ous.tk/2019/12/'>December 2019</a>&nbsp;(4)</li>
+	<li><a href='https://k-ous.tk/2019/11/'>November 2019</a>&nbsp;(4)</li>
+	<li><a href='https://k-ous.tk/2019/10/'>October 2019</a>&nbsp;(5)</li>
+	<li><a href='https://k-ous.tk/2019/09/'>September 2019</a>&nbsp;(3)</li>
+	<li><a href='https://k-ous.tk/2019/08/'>August 2019</a>&nbsp;(4)</li>
+	<li><a href='https://k-ous.tk/2019/07/'>July 2019</a>&nbsp;(5)</li>
+	<li><a href='https://k-ous.tk/2019/06/'>June 2019</a>&nbsp;(6)</li>
+	<li><a href='https://k-ous.tk/2019/05/'>May 2019</a>&nbsp;(5)</li>
+	<li><a href='https://k-ous.tk/2019/04/'>April 2019</a>&nbsp;(5)</li>
+	<li><a href='https://k-ous.tk/2019/03/'>March 2019</a>&nbsp;(4)</li>
+	<li><a href='https://k-ous.tk/2019/02/'>February 2019</a>&nbsp;(5)</li>
+	<li><a href='https://k-ous.tk/2019/01/'>January 2019</a>&nbsp;(6)</li>
+	<li><a href='https://k-ous.tk/2018/12/'>December 2018</a>&nbsp;(7)</li>
+	<li><a href='https://k-ous.tk/2018/11/'>November 2018</a>&nbsp;(9)</li>
+	<li><a href='https://k-ous.tk/2018/10/'>October 2018</a>&nbsp;(9)</li>
+	<li><a href='https://k-ous.tk/2018/09/'>September 2018</a>&nbsp;(8)</li>
+	<li><a href='https://k-ous.tk/2018/08/'>August 2018</a>&nbsp;(8)</li>
+	<li><a href='https://k-ous.tk/2018/07/'>July 2018</a>&nbsp;(9)</li>
+	<li><a href='https://k-ous.tk/2018/06/'>June 2018</a>&nbsp;(7)</li>
+	<li><a href='https://k-ous.tk/2018/05/'>May 2018</a>&nbsp;(9)</li>
+	<li><a href='https://k-ous.tk/2018/04/'>April 2018</a>&nbsp;(8)</li>
+	<li><a href='https://k-ous.tk/2018/03/'>March 2018</a>&nbsp;(9)</li>
+	<li><a href='https://k-ous.tk/2018/02/'>February 2018</a>&nbsp;(4)</li>
+	<li><a href='https://k-ous.tk/2018/01/'>January 2018</a>&nbsp;(9)</li>
+	<li><a href='https://k-ous.tk/2017/12/'>December 2017</a>&nbsp;(8)</li>
+	<li><a href='https://k-ous.tk/2017/11/'>November 2017</a>&nbsp;(9)</li>
+	<li><a href='https://k-ous.tk/2017/10/'>October 2017</a>&nbsp;(8)</li>
+	<li><a href='https://k-ous.tk/2017/09/'>September 2017</a>&nbsp;(8)</li>
+	<li><a href='https://k-ous.tk/2017/08/'>August 2017</a>&nbsp;(8)</li>
+	<li><a href='https://k-ous.tk/2017/07/'>July 2017</a>&nbsp;(8)</li>
+	<li><a href='https://k-ous.tk/2017/06/'>June 2017</a>&nbsp;(9)</li>
+	<li><a href='https://k-ous.tk/2017/05/'>May 2017</a>&nbsp;(9)</li>
+	<li><a href='https://k-ous.tk/2017/04/'>April 2017</a>&nbsp;(8)</li>
+	<li><a href='https://k-ous.tk/2017/03/'>March 2017</a>&nbsp;(10)</li>
+	<li><a href='https://k-ous.tk/2017/02/'>February 2017</a>&nbsp;(7)</li>
+	<li><a href='https://k-ous.tk/2017/01/'>January 2017</a>&nbsp;(6)</li>
+	<li><a href='https://k-ous.tk/2016/12/'>December 2016</a>&nbsp;(9)</li>
+	<li><a href='https://k-ous.tk/2016/11/'>November 2016</a>&nbsp;(9)</li>
+	<li><a href='https://k-ous.tk/2016/10/'>October 2016</a>&nbsp;(8)</li>
+	<li><a href='https://k-ous.tk/2016/09/'>September 2016</a>&nbsp;(9)</li>
+	<li><a href='https://k-ous.tk/2016/08/'>August 2016</a>&nbsp;(9)</li>
+	<li><a href='https://k-ous.tk/2016/07/'>July 2016</a>&nbsp;(8)</li>
+	<li><a href='https://k-ous.tk/2016/06/'>June 2016</a>&nbsp;(9)</li>
+	<li><a href='https://k-ous.tk/2016/05/'>May 2016</a>&nbsp;(9)</li>
+	<li><a href='https://k-ous.tk/2016/04/'>April 2016</a>&nbsp;(8)</li>
+	<li><a href='https://k-ous.tk/2016/03/'>March 2016</a>&nbsp;(10)</li>
+	<li><a href='https://k-ous.tk/2016/02/'>February 2016</a>&nbsp;(6)</li>
+	<li><a href='https://k-ous.tk/2016/01/'>January 2016</a>&nbsp;(8)</li>
+	<li><a href='https://k-ous.tk/2015/12/'>December 2015</a>&nbsp;(10)</li>
+	<li><a href='https://k-ous.tk/2015/11/'>November 2015</a>&nbsp;(8)</li>
+	<li><a href='https://k-ous.tk/2015/10/'>October 2015</a>&nbsp;(9)</li>
+	<li><a href='https://k-ous.tk/2015/09/'>September 2015</a>&nbsp;(9)</li>
+	<li><a href='https://k-ous.tk/2015/08/'>August 2015</a>&nbsp;(8)</li>
+	<li><a href='https://k-ous.tk/2015/07/'>July 2015</a>&nbsp;(9)</li>
+	<li><a href='https://k-ous.tk/2015/06/'>June 2015</a>&nbsp;(9)</li>
+	<li><a href='https://k-ous.tk/2015/05/'>May 2015</a>&nbsp;(8)</li>
+	<li><a href='https://k-ous.tk/2015/04/'>April 2015</a>&nbsp;(7)</li>
+	<li><a href='https://k-ous.tk/2015/03/'>March 2015</a>&nbsp;(8)</li>
+	<li><a href='https://k-ous.tk/2015/02/'>February 2015</a>&nbsp;(4)</li>
+	<li><a href='https://k-ous.tk/2015/01/'>January 2015</a>&nbsp;(6)</li>
+	<li><a href='https://k-ous.tk/2014/12/'>December 2014</a>&nbsp;(1)</li>
+			</ul>
+
+			</nav></aside>	</div><!-- #primary-sidebar -->
+	</div><!-- #secondary -->
+
+		</div><!-- #main -->
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+
+			
+			<div class="site-info">
+												<a href="https://wordpress.com/?ref=footer_blog" rel="nofollow">Blog at WordPress.com.</a>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+	<!--  -->
+<script src='//0.gravatar.com/js/gprofiles.js?ver=202133y' id='grofiles-cards-js'></script>
+<script id='wpgroho-js-extra'>
+var WPGroHo = {"my_hash":""};
+</script>
+<script crossorigin='anonymous' type='text/javascript' src='https://s0.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1610363240h'></script>
+
+	<script>
+		// Initialize and attach hovercards to all gravatars
+		( function() {
+			function init() {
+				if ( typeof Gravatar === 'undefined' ) {
+					return;
+				}
+
+				if ( typeof Gravatar.init !== 'function' ) {
+					return;
+				}
+
+				Gravatar.profile_cb = function ( hash, id ) {
+					WPGroHo.syncProfileData( hash, id );
+				};
+
+				Gravatar.my_hash = WPGroHo.my_hash;
+				Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+			}
+
+			if ( document.readyState !== 'loading' ) {
+				init();
+			} else {
+				document.addEventListener( 'DOMContentLoaded', init );
+			}
+		} )();
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-46008528540abff1a9f136b8239e18bd">
+	</div>
+	<div class="grofile-hash-map-d118baa1674dc9ac1f48212c91f63481">
+	</div>
+	<div class="grofile-hash-map-a6178e21d258022a2fcf8e338dfaaaf6">
+	</div>
+	<div class="grofile-hash-map-e8524d9aa9a7ed18ae861f0e373c364d">
+	</div>
+	<div class="grofile-hash-map-f67eb4d1e035beeb25552db7cd9af72e">
+	</div>
+	<div class="grofile-hash-map-f6ea0dcb503bada23589179888c9c925">
+	</div>
+	</div>
+<script id='highlander-comments-js-extra'>
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/toidicodedao.wordpress.com\/public.api\/connect\/?action=request&domain=k-ous.tk","logoutURL":"https:\/\/toidicodedao.wordpress.com\/wp-login.php?action=logout&_wpnonce=0e3f15a554","homeURL":"https:\/\/k-ous.tk\/","postID":"1","gravDefault":"mystery","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"","text_direction":"ltr"};
+</script>
+<script crossorigin='anonymous' type='text/javascript' src='https://s0.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1626677336j'></script>
+			<script type="text/javascript">
+			( function( $ ) {
+				$( document.body ).on( 'post-load', function () {
+					if ( typeof __ATA.insertInlineAds === 'function' ) {
+						__ATA.insertInlineAds();
+					}
+				} );
+			} )( jQuery );
+			</script>
+<script>
+window.addEventListener( "load", function( event ) {
+	var link = document.createElement( "link" );
+	link.href = "https://s0.wp.com/wp-content/mu-plugins/actionbar/actionbar.css?v=20201002";
+	link.type = "text/css";
+	link.rel = "stylesheet";
+	document.head.appendChild( link );
+
+	var script = document.createElement( "script" );
+	script.src = "https://s0.wp.com/wp-content/mu-plugins/actionbar/actionbar.js?v=20210817";
+	script.defer = true;
+	document.body.appendChild( script );
+} );
+</script>
+
+			<div id="jp-carousel-loading-overlay">
+			<div id="jp-carousel-loading-wrapper">
+				<span id="jp-carousel-library-loading">&nbsp;</span>
+			</div>
+		</div>
+		<div class="jp-carousel-overlay" style="display: none;">
+
+		<div class="jp-carousel-container">
+			<!-- The Carousel Swiper -->
+			<div
+				class="jp-carousel-wrap swiper-container jp-carousel-swiper-container jp-carousel-transitions"
+				itemscope
+				itemtype="https://schema.org/ImageGallery">
+				<div class="jp-carousel swiper-wrapper"></div>
+				<div class="jp-swiper-button-prev swiper-button-prev">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskPrev" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="9" height="12">
+							<path d="M16.2072 16.59L11.6496 12L16.2072 7.41L14.8041 6L8.8335 12L14.8041 18L16.2072 16.59Z" fill="white"/>
+						</mask>
+						<g mask="url(#maskPrev)">
+							<rect x="0.579102" width="23.8823" height="24" fill="#FFFFFF"/>
+						</g>
+					</svg>
+				</div>
+				<div class="jp-swiper-button-next swiper-button-next">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskNext" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="8" height="12">
+							<path d="M8.59814 16.59L13.1557 12L8.59814 7.41L10.0012 6L15.9718 12L10.0012 18L8.59814 16.59Z" fill="white"/>
+						</mask>
+						<g mask="url(#maskNext)">
+							<rect x="0.34375" width="23.8822" height="24" fill="#FFFFFF"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<!-- The main close buton -->
+			<div class="jp-carousel-close-hint">
+				<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="maskClose" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="15" height="14">
+						<path d="M19.3166 6.41L17.9135 5L12.3509 10.59L6.78834 5L5.38525 6.41L10.9478 12L5.38525 17.59L6.78834 19L12.3509 13.41L17.9135 19L19.3166 17.59L13.754 12L19.3166 6.41Z" fill="white"/>
+					</mask>
+					<g mask="url(#maskClose)">
+						<rect x="0.409668" width="23.8823" height="24" fill="#FFFFFF"/>
+					</g>
+				</svg>
+			</div>
+			<!-- Image info, comments and meta -->
+			<div class="jp-carousel-info">
+				<div class="jp-carousel-info-footer">
+					<div class="jp-carousel-pagination-container">
+						<div class="jp-swiper-pagination swiper-pagination"></div>
+						<div class="jp-carousel-pagination"></div>
+					</div>
+					<div class="jp-carousel-photo-title-container">
+						<h2 class="jp-carousel-photo-caption"></h2>
+					</div>
+					<div class="jp-carousel-photo-icons-container">
+						<a href="#" class="jp-carousel-icon-btn jp-carousel-icon-info" aria-label="Toggle photo metadata visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskInfo" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.7537 2C7.26076 2 2.80273 6.48 2.80273 12C2.80273 17.52 7.26076 22 12.7537 22C18.2466 22 22.7046 17.52 22.7046 12C22.7046 6.48 18.2466 2 12.7537 2ZM11.7586 7V9H13.7488V7H11.7586ZM11.7586 11V17H13.7488V11H11.7586ZM4.79292 12C4.79292 16.41 8.36531 20 12.7537 20C17.142 20 20.7144 16.41 20.7144 12C20.7144 7.59 17.142 4 12.7537 4C8.36531 4 4.79292 7.59 4.79292 12Z" fill="white"/>
+									</mask>
+									<g mask="url(#maskInfo)">
+										<rect x="0.8125" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+							</span>
+						</a>
+												<a href="#" class="jp-carousel-icon-btn jp-carousel-icon-comments" aria-label="Toggle photo comments visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskComments" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M4.3271 2H20.2486C21.3432 2 22.2388 2.9 22.2388 4V16C22.2388 17.1 21.3432 18 20.2486 18H6.31729L2.33691 22V4C2.33691 2.9 3.2325 2 4.3271 2ZM6.31729 16H20.2486V4H4.3271V18L6.31729 16Z" fill="white"/>
+									</mask>
+									<g mask="url(#maskComments)">
+										<rect x="0.34668" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+
+								<span class="jp-carousel-has-comments-indicator" aria-label="This image has comments."></span>
+							</span>
+						</a>
+											</div>
+				</div>
+				<div class="jp-carousel-info-extra">
+					<div class="jp-carousel-info-content-wrapper">
+						<div class="jp-carousel-photo-title-container">
+							<h2 class="jp-carousel-photo-title"></h2>
+						</div>
+						<div class="jp-carousel-comments-wrapper">
+															<div id="jp-carousel-comments-loading">
+									<span>Loading Comments...</span>
+								</div>
+								<div class="jp-carousel-comments"></div>
+								<div id="jp-carousel-comment-form-container">
+									<span id="jp-carousel-comment-form-spinner">&nbsp;</span>
+									<div id="jp-carousel-comment-post-results"></div>
+																														<form id="jp-carousel-comment-form">
+												<label for="jp-carousel-comment-form-comment-field" class="screen-reader-text">Write a Comment...</label>
+												<textarea
+													name="comment"
+													class="jp-carousel-comment-form-field jp-carousel-comment-form-textarea"
+													id="jp-carousel-comment-form-comment-field"
+													placeholder="Write a Comment..."
+												></textarea>
+												<div id="jp-carousel-comment-form-submit-and-info-wrapper">
+													<div id="jp-carousel-comment-form-commenting-as">
+																													<fieldset>
+																<label for="jp-carousel-comment-form-email-field">Email (Required)</label>
+																<input type="text" name="email" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-email-field" />
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-author-field">Name (Required)</label>
+																<input type="text" name="author" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-author-field" />
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-url-field">Website</label>
+																<input type="text" name="url" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-url-field" />
+															</fieldset>
+																											</div>
+													<input
+														type="submit"
+														name="submit"
+														class="jp-carousel-comment-form-button"
+														id="jp-carousel-comment-form-button-submit"
+														value="Post Comment" />
+												</div>
+											</form>
+																											</div>
+													</div>
+						<div class="jp-carousel-image-meta">
+							<div class="jp-carousel-title-and-caption">
+								<div class="jp-carousel-photo-info">
+									<h3 class="jp-carousel-caption" itemprop="caption description"></h3>
+								</div>
+
+								<div class="jp-carousel-photo-description"></div>
+							</div>
+							<ul class="jp-carousel-image-exif" style="display: none;"></ul>
+							<a class="jp-carousel-image-download" target="_blank" style="display: none;">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="19" height="18">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M5.84615 5V19H19.7775V12H21.7677V19C21.7677 20.1 20.8721 21 19.7775 21H5.84615C4.74159 21 3.85596 20.1 3.85596 19V5C3.85596 3.9 4.74159 3 5.84615 3H12.8118V5H5.84615ZM14.802 5V3H21.7677V10H19.7775V6.41L9.99569 16.24L8.59261 14.83L18.3744 5H14.802Z" fill="white"/>
+									</mask>
+									<g mask="url(#mask0)">
+										<rect x="0.870605" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+								<span class="jp-carousel-download-text"></span>
+							</a>
+							<div class="jp-carousel-image-map" style="display: none;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+		
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/k-ous.tk\/about\/":1};
+	</script>
+				<div id="fb-root"></div>
+			<script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&appId=249643311490&version=v2.3'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+			<script>
+			document.body.addEventListener( 'is.post-load', function() {
+				if ( 'undefined' !== typeof FB ) {
+					FB.XFBML.parse();
+				}
+			} );
+			</script>
+						<script type="text/javascript">
+				( function () {
+					var currentScript = document.currentScript;
+
+					// Helper function to load an external script.
+					function loadScript( url, cb ) {
+						var script = document.createElement( 'script' );
+						var prev = currentScript || document.getElementsByTagName( 'script' )[ 0 ];
+						script.setAttribute( 'async', true );
+						script.setAttribute( 'src', url );
+						prev.parentNode.insertBefore( script, prev );
+						script.addEventListener( 'load', cb );
+					}
+
+					function init() {
+						loadScript( 'https://platform.linkedin.com/in.js?async=true', function () {
+							if ( typeof IN !== 'undefined' ) {
+								IN.init();
+							}
+						} );
+					}
+
+					if ( document.readyState === 'loading' ) {
+						document.addEventListener( 'DOMContentLoaded', init );
+					} else {
+						init();
+					}
+
+					document.body.addEventListener( 'is.post-load', function() {
+						if ( typeof IN !== 'undefined' ) {
+							IN.parse();
+						}
+					} );
+				} )();
+			</script>
+			<link rel='stylesheet' id='all-css-0-3' href='https://s0.wp.com/_static/??/wp-content/mu-plugins/carousel/swiper-bundle.css,/wp-content/mu-plugins/carousel/jetpack-carousel.css?m=1628632150j&cssminify=yes' type='text/css' media='all' />
+<script id='comment-like-js-extra'>
+var comment_like_text = {"loading":"Loading..."};
+</script>
+<script id='jetpack-facebook-embed-js-extra'>
+var jpfbembed = {"appid":"249643311490","locale":"en_US"};
+</script>
+<script id='jetpack-carousel-js-extra'>
+var jetpackSwiperLibraryPath = {"url":"\/wp-content\/mu-plugins\/carousel\/swiper-bundle.js"};
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/k-ous.tk\/wp-admin\/admin-ajax.php","nonce":"8f13cb01f9","display_exif":"1","display_comments":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","copyright":"Copyright","comment_registration":"0","require_name_email":"1","login_url":"https:\/\/toidicodedao.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fk-ous.tk%2Fabout%2F","blog_id":"81976675","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"],"stats_query_args":"blog=81976675&v=wpcom&tz=7&user_id=0&subd=toidicodedao","is_public":"1"};
+</script>
+<script id='sharing-js-js-extra'>
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+</script>
+<script crossorigin='anonymous' type='text/javascript' src='https://s0.wp.com/_static/??-eJyNkdtSwyAQhl9IslU7Wi8cH8UhZJNuwklYivHppdNkxsYOegX8+397ArIXyllGyzBG6PBECv1nM8Y7uA6NHwnDvBwN2RNh/tM2InupJhEw0hdu7SYJr9NANoKmCSMUKOFR2k5jqJiVM6ZI4gKNZ7qFmMnXKvyCroQVJKt06q4NAb2eG0N2m52PaIrVpxY4F2HuXQqMaM90n6xicjZWesrUDcgRMJWomwiFlhkYjdeScaNX8ixrhvfSPvRSYVsogabFrkLJrswkWhnAyMgYyk1wKHlubqM8LwlvLOLnmmVwKaJeexKrUGtkomiQxWOzW0Zwwfyjhsi+/NHmWeG8iyx6LSlAPMpAdljPAr2Z1/unh5f94fC8343fknAo5w=='></script>
+<script type='text/javascript'>
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-facebook' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-facebook' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+						return false;
+					}
+				} );
+			} )();
+</script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<iframe src='https://widgets.wp.com/likes/master.html?ver=20210818#ver=20210818&amp;origin=https://k-ous.tk' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+	<div id='likes-other-gravatars'>
+		<div class="likes-text">
+			<span>%d</span> bloggers like this:		</div>
+		<ul class="wpl-avatars sd-like-gravatars"></ul>
+	</div>
+	
+		<script src="//stats.wp.com/w.js?61" defer></script> <script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'81976675','blog_tz':'7','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'81976675','v':'wpcom','tz':'7','user_id':'0','post':'1','subd':'toidicodedao'}]);
+_stq.push(['extra', {'crypt':'UE5tW3cvZGQ/JUs1UEpqTEJUUE5JaFo0OVtmenYtJnY5WnxkNjJtLlZURGQvOTgrbVouTmJ8RjRpR0tENFh3VHU/N2NWVlEtbHNZdGJJT2dDT1o5XVRaK2xFX1p3ZkJZZUJjUGQmJnlBOCtaTWN0MkNjcUt8THZRMmM5RG1uLHBZNDdhLEJ6UGhBJmszSkIrZS9hb0FmP2NmP3hsb1FtcXBCck9wanlXWDJPSmR8NDJ+d3FEPVQtbTh5SDU5SVVHSHFzcG9TJm4zfEZqWEUtLWU5K1JhSDctbjFtRl9JcXFFSmlCW28rNUc/cGptVDZSUmlu'}]);
+_stq.push([ 'clickTrackerInit', '81976675', '1' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:1px;width:1px;overflow:hidden;position:absolute;bottom:1px;" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script></body>
+</html>

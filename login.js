@@ -1,7 +1,7 @@
 
 var jwt = localStorage.getItem("jwt");
 if (jwt != null) {
-  window.location.href = './index.html'
+  window.location.href = './main.html'
 }
 
 function login() {
